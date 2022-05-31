@@ -1,1 +1,2 @@
 - ansible file aufsplitten
+- gitignore hinzufuegen
