@@ -1,0 +1,23 @@
+---
+- hosts: all
+  tasks: 
+  - name: install packages
+    become: true
+    dnf: 
+      name: [zsh, git, tmux]
+      state: latest
+  - name: Install oh my zsh
+    git:
+      repo: https://github.com/ohmyzsh/ohmyzsh.git
+      dest: ~/.oh-my-zsh
+      depth: 1
+  - name: set zsh as default shell
+    become: yes
+    user:
+      name: fedora
+      shell: /bin/zsh
+  - name: clone mqttbay repo
+    git:
+      repo: https://github.com/Felix-Jacob/MQTTbay
+      dest: ~/MQTTbay
+      depth: 1
