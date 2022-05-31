@@ -1,0 +1,21 @@
+doctype html 
+html
+
+    head
+        title="Login"
+        script(defer="true")
+            include ./scripts/login.js
+
+    body
+        h1="Please enter your credentials:"
+        p   
+            label(for="inputUsername") Username 
+            br
+            input(type="text")#inputUsername 
+        p   
+            label(for="inputPassword") Password 
+            br
+            input(type="text")#inputPassword
+        p 
+            button#login login 
+            button#register register

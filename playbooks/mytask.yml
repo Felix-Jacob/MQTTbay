@@ -1,23 +1,69 @@
 ---
 - hosts: all
+
   tasks: 
+
+# ZSH
+
+  - name: Update and upgrade apt packages
+    become: true
+    apt:
+      upgrade: yes
+      update_cache: yes
+      cache_valid_time: 86400 #One day
+
   - name: install packages
     become: true
-    dnf: 
+    apt: 
+      update_cache: yes
       name: [zsh, git, tmux]
       state: latest
-  - name: Install oh my zsh
-    git:
-      repo: https://github.com/ohmyzsh/ohmyzsh.git
-      dest: ~/.oh-my-zsh
-      depth: 1
+
   - name: set zsh as default shell
     become: yes
     user:
-      name: fedora
+      name: ubuntu
       shell: /bin/zsh
+
+  - name: download ohmyzsh installation script
+    ansible.builtin.get_url:
+      url: https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh
+      dest: /tmp/installOmz.sh
+
+  - name: Run ohmyzsh installation script
+    ansible.builtin.shell:
+      cmd: cat /tmp/installOmz.sh | sh -s -- -y
+      creates: ~/.oh-my-zsh
+
   - name: clone mqttbay repo
     git:
       repo: https://github.com/Felix-Jacob/MQTTbay
       dest: ~/MQTTbay
       depth: 1
+
+# DOCKER
+
+  - name: Set up the repository
+    become: true
+    apt:
+      update_cache: yes
+      name: [ca-certificates, curl, gnupg, lsb-release]
+      state: latest
+  
+  - name: Add Dockers official GPG key
+    become: true
+    apt_key:
+      url: https://download.docker.com/linux/ubuntu/gpg
+      state: present
+
+  - name: Add Docker Repository
+    become: true
+    apt_repository:
+      repo: deb https://download.docker.com/linux/ubuntu focal stable
+      state: present
+
+  - name: Install Docker Engine
+    become: true
+    apt: 
+      update_cache: yes
+      name: [docker-ce, docker-ce-cli, containerd.io, docker-compose-plugin]

@@ -1,0 +1,19 @@
+const express = require('express');
+const app = express();
+const port = 3000;
+
+// settings for pug
+app.set('views', './views');
+app.set('view engine', 'pug');
+
+app.listen(port, () => {
+    console.log(`listening on port: ${port}`);
+});
+
+app.get('/', (req, res) => {
+    res.render('main'); 
+});
+
+app.get('/login', (req, res) => {
+    res.render('login'); 
+});
