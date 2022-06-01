@@ -1,0 +1,6 @@
+---
+- hosts: all
+
+  tasks: 
+  - import_tasks: zsh.yml
+  - import_tasks: installDocker.yml
