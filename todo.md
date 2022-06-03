@@ -1,1 +1,2 @@
-- gitignore hinzufuegen
+- Docker image fuer YDB erstellen und pushen
+
