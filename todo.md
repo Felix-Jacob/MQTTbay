@@ -1,1 +1,2 @@
-- gitignore hinzufuegen
+- Navigation auf ydb website lernen
+- acculturation workshop machen
