@@ -1,2 +1,0 @@
-- Navigation auf ydb website lernen
-- acculturation workshop machen
