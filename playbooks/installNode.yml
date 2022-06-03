@@ -1,0 +1,9 @@
+  - name: download nvm installation script
+    ansible.builtin.get_url:
+      url: https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh
+      dest: /tmp/installNvm.sh
+      
+  - name: Run nvm installation script
+    ansible.builtin.shell:
+      cmd: cat /tmp/installNvm.sh | sh -s -- -y
+      creates: ~/.nvm
