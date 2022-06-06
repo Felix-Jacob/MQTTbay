@@ -1,15 +1,41 @@
-# YOTTA
+---
+- hosts: db
+  tasks: 
+    - name: Update and upgrade apt packages
+      become: true
+      apt: 
+        upgrade: yes
+        update_cache: yes
+        cache_valid_time: 86400 #One day
 
-  - name: Update and upgrade apt packages
-    become: true
-    apt: 
-      upgrade: yes
-      update_cache: yes
-      cache_valid_time: 86400 #One day
+    - name: Install packages
+      become: true
+      apt: 
+        update_cache: yes
+        name: [git, tmux, file, make, binutils, pkg-config]
 
-  - name: Install packages
-    become: true
-    apt: 
-      update_cache: yes
-      name: [git, tmux, file, make, binutils]
+    - name: create tmp directory
+      shell:
+        cmd: mkdir /tmp/tmp
+        creates: /tmp/tmp/
 
+    - name: download installation script
+      get_url:
+        url: https://gitlab.com/YottaDB/DB/YDB/raw/master/sr_unix/ydbinstall.sh
+        dest: /tmp/tmp
+
+    - name: Make the file executable
+      become: true
+      shell:
+        cmd: chmod +x /tmp/tmp/ydbinstall.sh
+  
+    - name: Install YottaDB (typical installation)
+      become: true
+      shell:
+        cmd: /tmp/tmp/ydbinstall.sh --utf8 default --verbose
+        creates: /usr/local/lib/yottadb/r134
+    
+    - name: Install YottaDB (typical installation)
+      become: true
+      shell:
+        cmd: source $(pkg-config --variable=prefix yottadb)/ydb_env_set
