@@ -1,7 +1,7 @@
 const express = require('express'); 
 const app = express(); 
 
-const ydd = require('nodem').Ydb();
+const ydb = require('nodem').Ydb();
 console.log(ydb.get({global: 'num'}));
 
 const port = 4000;
