@@ -36,4 +36,27 @@ app.post('/login', (req, res) => {
 	return res.status(200).send('successful login\n'); 
 });
 
+app.post('/register', (req, res) => {
+	if(!req.body.username) 
+		return res.status(400).send('Please enter usename\n'); 
+
+	if(!req.body.password) 
+		return res.status(400).send('Please enter password\n'); 
+
+	let enteredUsername = req.body.username;
+	let enteredPassword = req.body.password;
+
+	let queryResultUsername = ydb.data({global: 'Users', subscripts: [enteredUsername]});
+
+	if(queryResultUsername.defined != 0) 
+		return res.status(400).send('username already exists\n'); 
+
+	ydb.set('^Users', enteredUsername, 'password', enteredPassword, (err, result) => {
+		if(err)
+			return res.status(400).send('database error. couldnt create user');
+
+		return res.status(200).send('registration was successful\n');
+	}); 
+});
+
 //ydb.set({global:'Users', subscripts: ["emilia", "password"], data: 1234});
