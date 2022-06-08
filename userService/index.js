@@ -22,12 +22,12 @@ app.post('/login', (req, res) => {
 	let enteredUsername = req.body.username;
 	let enteredPassword = req.body.password;
 
-	let queryResultUsername = ydb.data({global: 'Users', subscripts: [enteredUsername]});
+	let queryResultUsername = ydb.data('^Users',enteredUsername);
 
 	if(queryResultUsername.defined == 0) 
 		return res.status(400).send('username doesnt exist\n'); 
 
-	let queryResultPassword = ydb.get({global:'Users', subscripts: [enteredUsername, "password"]});
+	let queryResultPassword = ydb.get('Users', enteredUsername, "password");
 	let savedPassword = queryResultPassword.data;
 
 	if(savedPassword != enteredPassword)
@@ -46,7 +46,7 @@ app.post('/register', (req, res) => {
 	let enteredUsername = req.body.username;
 	let enteredPassword = req.body.password;
 
-	let queryResultUsername = ydb.data({global: 'Users', subscripts: [enteredUsername]});
+	let queryResultUsername = ydb.data('Users', enteredUsername);
 
 	if(queryResultUsername.defined != 0) 
 		return res.status(400).send('username already exists\n'); 
