@@ -6,7 +6,8 @@ app.use(express.urlencoded({extended: true}));
 const port = 4000;
 
 const ydb=require('nodem').Ydb();
-ydb.open();
+ydbStatus = ydb.open();
+console.log(ydbStatus);
 
 app.listen(port, (err) => {
 	console.log(`UserService was successfully started on port: ${port}`);
@@ -27,7 +28,7 @@ app.post('/login', (req, res) => {
 	if(queryResultUsername.defined == 0) 
 		return res.status(400).send('username doesnt exist\n'); 
 
-	let queryResultPassword = ydb.get('Users', enteredUsername, "password");
+	let queryResultPassword = ydb.get('^Users', enteredUsername, "password");
 	let savedPassword = queryResultPassword.data;
 
 	if(savedPassword != enteredPassword)
@@ -46,7 +47,9 @@ app.post('/register', (req, res) => {
 	let enteredUsername = req.body.username;
 	let enteredPassword = req.body.password;
 
-	let queryResultUsername = ydb.data('Users', enteredUsername);
+	let queryResultUsername = ydb.data('^Users', enteredUsername);
+
+	console.log(JSON.stringify(queryResultUsername));
 
 	if(queryResultUsername.defined != 0) 
 		return res.status(400).send('username already exists\n'); 

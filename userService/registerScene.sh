@@ -1,7 +1,7 @@
 curl -X POST -H "Content-Type: application/json" \
-	-d '{"username": "uello", "password": "world"}' \
+	-d '{"username": "dfjdifsjfdlidshdfsfdfello", "password": "world"}' \
 	localhost:4000/register
 
 curl -X POST -H "Content-Type: application/json" \
-	-d '{"username": "hello", "password": "world"}' \
+	-d '{"username": "helfhdsiflo", "password": "world"}' \
 	localhost:4000/register
