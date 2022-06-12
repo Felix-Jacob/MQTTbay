@@ -6,7 +6,12 @@ app.use(express.urlencoded({extended: true}));
 const port = 4000;
 
 const ydb=require('nodem').Ydb();
-ydbStatus = ydb.open();
+ydbStatus = ydb.open(
+	{
+		routinesPath: '/root/MQTTbay/userService/node_modules/nodem/src',
+		callinTable: '/root/MQTTbay/userService/node_modules/nodem/resources/nodem.ci'
+	}
+);
 console.log(ydbStatus);
 
 app.listen(port, (err) => {
