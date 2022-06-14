@@ -12,14 +12,7 @@ async function login() {
     let enteredPassword = document.getElementById('inputPassword').value;
 
     fetch('16996205-7370-4149-bed2-ae69b3073539.ul.bw-cloud-instance.org:4000/login', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({
-            username: enteredUsername,
-            password: enteredPassword
-        })
+        method: 'POST'
     });
 }
 
