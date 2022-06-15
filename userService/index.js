@@ -6,7 +6,7 @@ const corsOptions = {
 	optionsSuccessStatus: 200
 }
 
-app.options('/login', cors(corsOptions)); // enable pre-flight
+app.options('/*', cors(corsOptions)); // enable pre-flight
 app.use(express.json());
 app.use(express.urlencoded({extended: true})); 
 
