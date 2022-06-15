@@ -19,7 +19,7 @@ async function login() {
 
     let responseText = await response.text();
 
-    console.log(responseText);
+    console.log(`fetch response: ${responseText}`);
 }
 
 async function register() {
