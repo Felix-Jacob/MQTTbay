@@ -38,6 +38,8 @@ app.post('/login', cors(corsOptions), (req, res) => {
 
 	let queryResultUsername = ydb.data('^Users',enteredUsername, (err, result) => {
 		console.log('result: ', result);
+		if(err)
+			console.log('error ', err);
 		if(result.defined == 0) 
 		return res.status(400).send('username doesnt exist\n'); 
 
