@@ -42,7 +42,7 @@ app.post('/login', cors(corsOptions), (req, res) => {
 		return res.status(400).send('username doesnt exist\n')
 
 	let queryResultPassword = ydb.get('^Users', enteredUsername, "password");
-	let savedPassword = queryResultPassword.data;
+	let savedPassword = queryResultPassword;
 
 	if(savedPassword != enteredPassword)
 		return res.status(401).send('wrong password\n'); 
