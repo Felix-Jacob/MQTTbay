@@ -5,6 +5,8 @@ const corsOptions = {
 	origin: 'http://16996205-7370-4149-bed2-ae69b3073539.ul.bw-cloud-instance.org:3000',
 	optionsSuccessStatus: 200
 }
+
+app.options('/login', cors(corsOptions)); // enable pre-flight
 app.use(express.json());
 app.use(express.urlencoded({extended: true})); 
 
