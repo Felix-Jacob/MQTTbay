@@ -62,8 +62,6 @@ app.post('/register', cors(corsOptions), (req, res) => {
 
 	let queryResultUsername = ydb.data('^Users', enteredUsername);
 
-	console.log(queryResultUsername);
-
 	if(queryResultUsername != 0) 
 		return res.status(400).send('username already exists\n'); 
 
