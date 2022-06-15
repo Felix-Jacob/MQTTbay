@@ -37,7 +37,7 @@ app.post('/login', cors(corsOptions), (req, res) => {
 	let enteredPassword = req.body.password;
 
 	let queryResultUsername = ydb.data('^Users',enteredUsername, (err, result) => {
-		console.log('result: ', result);
+		console.log('result: ', JSON.stringify(result));
 		if(err)
 			console.log('error ', err);
 		if(result.defined == 0) 
