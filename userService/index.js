@@ -36,17 +36,10 @@ app.post('/login', cors(corsOptions), (req, res) => {
 	let enteredUsername = req.body.username;
 	let enteredPassword = req.body.password;
 
-	let queryResultUsername = ydb.data('^Users',enteredUsername, (err, result) => {
-		console.log('result: ', JSON.stringify(result));
-		if(err)
-			console.log('error ', err);
-		if(result.defined == 0) 
-		return res.status(400).send('username doesnt exist\n'); 
-
-		console.log(result);
-	});
-
-
+	let queryResultUsername = ydb.data('^Users',enteredUsername);
+	
+	if(queryResultUsername == 0) 
+		return res.status(400).send('username doesnt exist\n')
 
 	let queryResultPassword = ydb.get('^Users', enteredUsername, "password");
 	let savedPassword = queryResultPassword.data;

@@ -1,0 +1,1 @@
+- was wird in endpoints asynchron ausgefuehrt und was nicht?
