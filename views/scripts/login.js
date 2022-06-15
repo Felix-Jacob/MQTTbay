@@ -14,7 +14,11 @@ async function login() {
     const data = { username: 'example'};
 
     let response = await fetch('http://16996205-7370-4149-bed2-ae69b3073539.ul.bw-cloud-instance.org:4000/login', {
-        method: 'post'
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
     });
 
     let responseText = await response.text();
