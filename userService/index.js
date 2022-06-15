@@ -73,4 +73,4 @@ app.post('/register', cors(corsOptions), (req, res) => {
 	}); 
 });
 
-//ydb.set({global:'Users', subscripts: ["emilia", "password"], data: 1234});
+// ydb.set({global:'Users', subscripts: ["emilia", "password"], data: 1234});
