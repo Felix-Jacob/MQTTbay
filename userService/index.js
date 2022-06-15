@@ -1,11 +1,17 @@
 const express = require('express'); 
+const cors = require('cors');
 const app = express(); 
+const corsOptions = {
+	origin: 'http://16996205-7370-4149-bed2-ae69b3073539.ul.bw-cloud-instance.org:3000',
+	optionsSuccessStatus: 200
+}
 app.use(express.json());
 app.use(express.urlencoded({extended: true})); 
 
 const port = 4000;
 
 const ydb=require('nodem').Ydb();
+
 ydbStatus = ydb.open(
 	{
 		routinesPath: '/root/MQTTbay/userService/node_modules/nodem/src',
@@ -18,7 +24,7 @@ app.listen(port, (err) => {
 	console.log(`UserService was successfully started on port: ${port}`);
  });
 
-app.post('/login', (req, res) => {
+app.post('/login', cors(corsOptions), (req, res) => {
 	if(!req.body.username) 
 		return res.status(400).send('Please enter usename\n'); 
 
@@ -42,7 +48,7 @@ app.post('/login', (req, res) => {
 	return res.status(200).send('successful login\n'); 
 });
 
-app.post('/register', (req, res) => {
+app.post('/register', cors(corsOptions), (req, res) => {
 	if(!req.body.username) 
 		return res.status(400).send('Please enter usename\n'); 
 
