@@ -4,6 +4,7 @@ window.onload = function() {
     buttonRegister = document.getElementById('buttonRegister');
     
     buttonLogin.addEventListener('click', login);
+    buttonRegister.addEventListener('click', register);
 };
 
 async function login() {
