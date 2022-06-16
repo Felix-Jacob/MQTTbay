@@ -53,7 +53,6 @@ app.post('/login', cors(corsOptions), (req, res) => {
 
   else {
     let accessToken = jwt.sign(enteredUserName, rand);
-fatal: could not read Username for 'https://github.com': No such device or address
   }
 });
 
