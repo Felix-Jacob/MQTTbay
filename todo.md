@@ -2,4 +2,4 @@
 - bei erfolgreichem login token setzen
 - look at other peoples bachelors experience
 - create a plan of what to do next
-- call secretarian because of the time limit for bachelors
+- call secretarian because of the time limit for bachelorsfd
