@@ -76,8 +76,10 @@ app.post('/register', cors(corsOptions), (req, res) => {
 	ydb.set('^Users', enteredUsername, 'password', enteredPassword, (err, result) => {
 		if(err)
 			return res.status(400).send('database error. couldnt create user');
-
-		return res.status(200).send('registration was successful\n');
+		else {
+			let accessToken = jwt.sign(enteredUsername, rand);
+			return res.status(200).json({accessToken: accessToken});
+		}
 	}); 
 });
 

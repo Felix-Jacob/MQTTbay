@@ -44,6 +44,11 @@ async function register() {
     let responseText = await response.text();
     
     let responseOk = await response.ok;
+    
+    if(responseOk) {
+        let responseJson = await response.json();
+        document.cookie = 'token=' + responseJson.accessToken;
+    }
 
     console.log(`fetch response: ${responseOk}`);
 }
