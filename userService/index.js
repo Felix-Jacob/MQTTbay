@@ -87,16 +87,15 @@ app.post('/checkToken', cors(corsOptions), (req, res) => {
 	var authHeader = req.headers['authorization'];
     
 	if(!authHeader) 
-        return res.json({response: "missing authorization information"});
+		return res.status(400).send();
 
-	var token = authHeader.split(' ')[1];
-    console.log(token);
+	let token = authHeader.split(' ')[1];
 
 	jwt.verify(token, rand, (err, username) => {
         if(err)
-            return res.json({response: "wrong credentials"});
-
-        res.status(200).json({username: username});
+            return res.status(400).send();
+	    
+		res.status(200).json({username: username});
     });
 });
 // ydb.set({global:'Users', subscripts: ["emilia", "password"], data: 1234});

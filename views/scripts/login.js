@@ -1,5 +1,5 @@
 
-window.onload = function() {
+window.onload = async function() {
     buttonLogin = document.getElementById('buttonLogin');
     buttonRegister = document.getElementById('buttonRegister');
     
@@ -10,17 +10,19 @@ window.onload = function() {
     let cookieArr = document.cookie.split(';');
     let found = cookieArr.find(cookie => cookie.split('=')[0] == 'token');
     if(found) {
-        console.log('token already set');
-
         // check if token is legit
         let response = await fetch('http://16996205-7370-4149-bed2-ae69b3073539.ul.bw-cloud-instance.org:4000/checkToken', {
             method: 'POST',
             headers: {
-                'authorization': 'bearer ' + found
+                'authorization': 'bearer ' + found.split('=')[1]
             }
         });
-    
-        console.log(await response.ok);
+        
+        if (await response.ok)
+            console.log(await response.json())
+        else {
+
+        }
     }
 };
 
