@@ -83,4 +83,20 @@ app.post('/register', cors(corsOptions), (req, res) => {
 	}); 
 });
 
+app.post('/checkToken', cors(corsOptions), (req, res) => {
+	var authHeader = req.headers['authorization'];
+    
+	if(!authHeader) 
+        return res.json({response: "missing authorization information"});
+
+	var token = authHeader.split(' ')[1];
+    console.log(token);
+
+	jwt.verify(token, rand, (err, username) => {
+        if(err)
+            return res.json({response: "wrong credentials"});
+
+        res.status(200).json({username: username});
+    });
+});
 // ydb.set({global:'Users', subscripts: ["emilia", "password"], data: 1234});

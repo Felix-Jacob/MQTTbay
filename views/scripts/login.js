@@ -5,6 +5,23 @@ window.onload = function() {
     
     buttonLogin.addEventListener('click', login);
     buttonRegister.addEventListener('click', register);
+
+    // check if token is already set
+    let cookieArr = document.cookie.split(';');
+    let found = cookieArr.find(cookie => cookie.split('=')[0] == 'token');
+    if(found) {
+        console.log('token already set');
+
+        // check if token is legit
+        let response = await fetch('http://16996205-7370-4149-bed2-ae69b3073539.ul.bw-cloud-instance.org:4000/checkToken', {
+            method: 'POST',
+            headers: {
+                'authorization': 'bearer ' + found
+            }
+        });
+    
+        console.log(await response.ok);
+    }
 };
 
 async function login() {
