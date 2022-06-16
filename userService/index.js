@@ -1,3 +1,7 @@
+const bcrypt = require('bcryptjs');
+const saltRounds = 10;
+const jwt = require('jsonwebtoken');
+const rand = '489ff0dd3d55fd69ed103b662106c4c29a57e8d3694b20a4c7afeef210bb899be9e42268b8a1fefe879ba331c3f07f6a6fcaff77ed8e2ac78e3a637e3552d8ec';
 const express = require('express'); 
 const cors = require('cors');
 const app = express(); 
@@ -47,7 +51,10 @@ app.post('/login', cors(corsOptions), (req, res) => {
 	if(savedPassword != enteredPassword)
 		return res.status(401).send('wrong password\n'); 
 
-	return res.status(200).send('successful login\n'); 
+  else {
+    let accessToken = jwt.sign(enteredUserName, rand);
+    return res.status(200).json({token: accessToken});
+  }
 });
 
 app.post('/register', cors(corsOptions), (req, res) => {
