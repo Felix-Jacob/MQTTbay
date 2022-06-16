@@ -51,9 +51,9 @@ app.post('/login', cors(corsOptions), (req, res) => {
 	if(savedPassword != enteredPassword)
 		return res.status(401).send('wrong password\n'); 
 
-  else {
-    let accessToken = jwt.sign(enteredUserName, rand);
-  }
+	else {
+		let accessToken = jwt.sign(enteredUsername, rand);
+	}
 });
 
 app.post('/register', cors(corsOptions), (req, res) => {
