@@ -54,7 +54,7 @@ app.post('/login', cors(corsOptions), (req, res) => {
 
 	else {
 		let accessToken = jwt.sign(enteredUsername, rand);
-		return res.status(200).send('ds;lfk');
+		return res.status(200).json({token: accessToken});
 	}
 });
 
