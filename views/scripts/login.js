@@ -21,13 +21,11 @@ async function login() {
 
     let responseOk = await response.ok;
 
-    if(responseOk) {
-        let accessToken = await response.json();
-        console.log(accessToken);
+     if(responseOk) {
+        let responseJson = await response.json();
+        document.cookie = 'token=' + responseJson.accessToken;
     }
 
-    // let token = await response.json();
-    // console.log(token);
     console.log(`fetch response: ${responseOk}`);
 }
 
