@@ -20,7 +20,8 @@ async function login() {
     });
 
     let responseOk = await response.ok;
-
+    let token = await response.json();
+    console.log(token);
     console.log(`fetch response: ${responseOk}`);
 }
 
