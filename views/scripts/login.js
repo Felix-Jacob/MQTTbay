@@ -19,9 +19,9 @@ async function login() {
         body: JSON.stringify(data)
     });
 
-    let responseText = await response.text();
+    let responseOk = await response.ok;
 
-    console.log(`fetch response: ${responseText}`);
+    console.log(`fetch response: ${responseOk}`);
 }
 
 async function register() {
@@ -37,8 +37,10 @@ async function register() {
     });
 
     let responseText = await response.text();
+    
+    let responseOk = await response.ok;
 
-    console.log(`fetch response: ${responseText}`);
+    console.log(`fetch response: ${responseOk}`);
 }
 
 function getEnteredAccessDetails() {
