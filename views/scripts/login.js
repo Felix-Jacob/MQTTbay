@@ -24,6 +24,7 @@ async function login() {
      if(responseOk) {
         let responseJson = await response.json();
         document.cookie = 'token=' + responseJson.accessToken;
+        document.location.href = "http://16996205-7370-4149-bed2-ae69b3073539.ul.bw-cloud-instance.org:3000/";
     }
 
     console.log(`fetch response: ${responseOk}`);
@@ -41,13 +42,12 @@ async function register() {
         body: JSON.stringify(data)
     });
 
-    let responseText = await response.text();
-    
     let responseOk = await response.ok;
     
     if(responseOk) {
         let responseJson = await response.json();
         document.cookie = 'token=' + responseJson.accessToken;
+        document.location.href = "http://16996205-7370-4149-bed2-ae69b3073539.ul.bw-cloud-instance.org:3000/";
     }
 
     console.log(`fetch response: ${responseOk}`);
