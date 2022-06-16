@@ -10,7 +10,7 @@ const corsOptions = {
 	optionsSuccessStatus: 200
 }
 
-app.options('/login', cors(corsOptions)); // enable pre-flight
+app.options('/*', cors(corsOptions)); // enable pre-flight
 app.use(express.json());
 app.use(express.urlencoded({extended: true})); 
 
@@ -46,7 +46,7 @@ app.post('/login', cors(corsOptions), (req, res) => {
 		return res.status(400).send('username doesnt exist\n')
 
 	let queryResultPassword = ydb.get('^Users', enteredUsername, "password");
-	let savedPassword = queryResultPassword.data;
+	let savedPassword = queryResultPassword;
 
 	if(savedPassword != enteredPassword)
 		return res.status(401).send('wrong password\n'); 
@@ -69,8 +69,6 @@ app.post('/register', cors(corsOptions), (req, res) => {
 
 	let queryResultUsername = ydb.data('^Users', enteredUsername);
 
-	console.log(queryResultUsername);
-
 	if(queryResultUsername != 0) 
 		return res.status(400).send('username already exists\n'); 
 
@@ -82,4 +80,4 @@ app.post('/register', cors(corsOptions), (req, res) => {
 	}); 
 });
 
-//ydb.set({global:'Users', subscripts: ["emilia", "password"], data: 1234});
+// ydb.set({global:'Users', subscripts: ["emilia", "password"], data: 1234});
