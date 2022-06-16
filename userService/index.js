@@ -31,6 +31,7 @@ app.listen(port, (err) => {
  });
 
 app.post('/login', cors(corsOptions), (req, res) => {
+	console.log('loginattempt');
 	if(!req.body.username) 
 		return res.status(400).send('Please enter username\n'); 
 
