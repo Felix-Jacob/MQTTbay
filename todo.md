@@ -1,5 +1,9 @@
 - was wird in endpoints asynchron ausgefuehrt und was nicht?
-- bei erfolgreichem login token setzen
-- look at other peoples bachelors experience
-- create a plan of what to do next
 - call secretarian because of the time limit for bachelorsfd
+- Allow a logged in User to list an article
+    - add article to db with user, article name, and start price
+    - add mqtt that 
+- Display all available Articles on the main page
+    - display name and price
+    - update list by mqtt
+- Add logout button

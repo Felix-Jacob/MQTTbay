@@ -1,0 +1,20 @@
+html
+  head
+    title="AddArticle"
+    script(defer="true")
+      include ./scripts/addArticle.js
+
+  body
+    h1="AddArticle"
+    button#buttonBack Back
+
+    p   
+      label(for="inputUsername")#labelArticleName Article name 
+      br
+      input(type="text")#inputArticleName
+    p   
+      label(for="inputPassword")#labelBasePrice Base price 
+      br
+      input(type="text")#inputBasePrice
+    p 
+      button#buttonAdd Add 
