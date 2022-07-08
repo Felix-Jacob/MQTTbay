@@ -1,5 +1,4 @@
 - was wird in endpoints asynchron ausgefuehrt und was nicht?
-- call secretarian because of the time limit for bachelorsfd
 - Allow a logged in User to list an article
     - add article to db with user, article name, and start price
     - add mqtt that 
