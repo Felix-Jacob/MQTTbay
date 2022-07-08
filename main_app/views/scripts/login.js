@@ -19,7 +19,7 @@ window.onload = async function() {
         });
         
         if (await response.ok)
-            document.location.href = "http://16996205-7370-4149-bed2-ae69b3073539.ul.bw-cloud-instance.org:3000/main";
+            document.location.href = origin + "/main";
         else {
 
         }
@@ -43,7 +43,7 @@ async function login() {
      if(responseOk) {
         let responseJson = await response.json();
         document.cookie = 'token=' + responseJson.accessToken;
-        document.location.href = "http://16996205-7370-4149-bed2-ae69b3073539.ul.bw-cloud-instance.org:3000/main";
+        document.location.href = origin + "/main";
     }
 
     console.log(`fetch response: ${responseOk}`);
@@ -66,7 +66,7 @@ async function register() {
     if(responseOk) {
         let responseJson = await response.json();
         document.cookie = 'token=' + responseJson.accessToken;
-        document.location.href = "http://16996205-7370-4149-bed2-ae69b3073539.ul.bw-cloud-instance.org:3000/main";
+        document.location.href = origin + "/main";
     }
 
     console.log(`fetch response: ${responseOk}`);
