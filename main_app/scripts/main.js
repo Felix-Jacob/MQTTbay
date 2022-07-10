@@ -17,9 +17,12 @@ window.onload = async function() {
 
         function onConnect() {
           console.log('connected');
-          let registrationMessage = new Paho.MQTT.Message(clientId);
-          registrationMessage.destinationName = 'register';
-          client.send(registrationMessage);
+          client.subscribe('register/' + clientId, {onSuccess: function () {
+              let registrationMessage = new Paho.MQTT.Message(clientId);
+              registrationMessage.destinationName = 'register';
+              client.send(registrationMessage);
+            }
+          });
         }
 
         function onMessageArrived(message) {
