@@ -56,7 +56,7 @@ function processBidMessage(message, articleId, userId) {
 function processRegistrationMessage(message) {
   registeredUsers.push(message.toString());
   console.log(registeredUsers);
-  client.publish(`register/${userId}`, 'success',  {qos:2}, (err) => {});
+  client.publish(`register/${message}`, 'success',  {qos:2}, (err) => {});
 }
 
 function processUnregistrationMessage(message) {

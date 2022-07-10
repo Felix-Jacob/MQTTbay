@@ -1,0 +1,882 @@
+Script started on 2022-07-10 17:50:40+02:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="140" LINES="75"]
+[1m[7m%[27m[1m[0m                                                                                                                                            ]2;ubuntu@mqttbay:~/MQTTbay/main_app]1;..Tbay/main_app[0m[27m[24m[J[01;32m➜  [36mmain_app[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hsscripts[?1l>[?2004l
+]2;scripts]1;scripts[1m[7m%[27m[1m[0m                                                                                                                                            ]2;ubuntu@mqttbay:~/MQTTbay/main_app/scripts]1;..n_app/scripts[0m[27m[24m[J[01;32m➜  [36mscripts[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hvvi v  mmv mq  
+[J[0maddArticle.js     [JauthorizeUser.js  [Jlogin.js          [Jmain.js         [J[A[0m[27m[24m[24Cmv[K[1CaddArticle.js
+[J[7maddArticle.js   [0m  [JauthorizeUser.js  [Jlogin.js          [Jmain.js         [J[A[0m[27m[24m[24Cmv addArticle.js[K
+[7maddArticle.js   [0m  [7maddArticle.js   [0m  [A[0m[27m[24m[24Cmv addArticle.js[K[12DuthorizeUser.js
+[18C[7mauthorizeUser.js[0m  addArticle.js     [A[0m[27m[24m[24Cmv authorizeUser.js[K[16Dlogin.js        [8D
+[36C[7mlogin.js        [0m  [18CauthorizeUser.js  [A[0m[27m[24m[24Cmv login.js[K[8Dmain.js 
+[54C[7mmain.js         [0m[36Clogin.js          [A[0m[27m[24m[24Cmv main.js[KaddArticle.js
+[7maddArticle.js   [0m  [54Cmain.js         [A[0m[27m[24m[24Cmv addArticle.js[K
+[J[A[40C[13D             [13D: cd = -     ccd -[?1l>[?2004l
+[J]2;cd -]1;cd~/MQTTbay/main_app
+[1m[7m%[27m[1m[0m                                                                                                                                            ]2;ubuntu@mqttbay:~/MQTTbay/main_app]1;..Tbay/main_app[0m[27m[24m[J[01;32m➜  [36mmain_app[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004h...[?1l>[?2004l
+]2;..]1;..[1m[7m%[27m[1m[0m                                                                                                                                            ]2;ubuntu@mqttbay:~/MQTTbay]1;~/MQTTbay[0m[27m[24m[J[01;32m➜  [36mMQTTbay[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004huus
+[0mUSER                       usb_modeswitch             usbreset                   usermod                                             
+USERNAME                   usb_modeswitch_dispatcher  useradd                    users                                               
+[Jusb-devices                [Jusbhid-dump                [Juserdel                    [J                                                  [3A[0m[27m[24m[24Cus[Ku  ddnsdomainname[1m [0m[0m W
+[J[A[38C[14D              [14Dddb
+[J[0mDBUS_SESSION_BUS_ADDRESS            dbus-monitor                        dbus-uuidgen                      
+[01;34mdbService[0m/                          dbus-run-session                    dbxtool                           
+dbus-cleanup-sockets                dbus-send                                                             
+[Jdbus-daemon                         [Jdbus-update-activation-environment  [J                                  [4A[0m[27m[24m[24Cdb[Kd  ccd dbService[1m/[0m[0m [?1l>[?2004l
+[J]2;cd dbService]1;cd[1m[7m%[27m[1m[0m                                                                                                                                            ]2;ubuntu@mqttbay:~/MQTTbay/dbService]1;..bay/dbService[0m[27m[24m[J[01;32m➜  [36mdbService[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hl[?1l>[?2004l
+]2;ls --color=tty -lah]1;ltotal 156K
+drwxrwxr-x   4 ubuntu ubuntu 4.0K Jul 10 17:50 [0m[01;34m.[0m
+drwxrwxr-x   7 ubuntu ubuntu 4.0K Jul 10 16:57 [01;34m..[0m
+-rw-rw-r--   1 ubuntu ubuntu 3.0K Jun 16 15:47 index.js
+-rw-rw-r--   1 ubuntu ubuntu  820 Jul 10 17:50 mqtt.js
+drwxrwxr-x 179 ubuntu ubuntu 4.0K Jun 16 13:47 [01;34mnode_modules[0m
+-rw-rw-r--   1 ubuntu ubuntu 127K Jun 16 13:47 package-lock.json
+-rw-rw-r--   1 ubuntu ubuntu  466 Jun 16 13:47 package.json
+drwxrwxr-x   2 ubuntu ubuntu 4.0K Jul  8 16:17 [01;34mtest_scripts[0m
+[1m[7m%[27m[1m[0m                                                                                                                                            ]2;ubuntu@mqttbay:~/MQTTbay/dbService]1;..bay/dbService[0m[27m[24m[J[01;32m➜  [36mdbService[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hmmv mqtt.js[1m [0m[0m ../m
+[J[01;34mmain_app[0m/        [J[01;34mmqtt_moderator[0m/[J[A[0m[27m[24m[26Cmv mqtt.js ../m[Kain_app[1m/[0m[0m/scripts[1m/[0m[0m [?1l>[?2004l
+[J]2;mv mqtt.js ../main_app/scripts]1;mv[1m[7m%[27m[1m[0m                                                                                                                                            ]2;ubuntu@mqttbay:~/MQTTbay/dbService]1;..bay/dbService[0m[27m[24m[J[01;32m➜  [36mdbService[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hccd -[?1l>[?2004l
+]2;cd -]1;cd~/MQTTbay
+[1m[7m%[27m[1m[0m                                                                                                                                            ]2;ubuntu@mqttbay:~/MQTTbay]1;~/MQTTbay[0m[27m[24m[J[01;32m➜  [36mMQTTbay[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hccd dbService[1m/[0m[13D            [0m [13Dccd m
+[J[01;34mmain_app[0m/        [J[01;34mmqtt_moderator[0m/[J[A[0m[27m[24m[24Ccd m[Kain_app[1m/[0m[0m/
+[J[J[01;34mnode_modules[0m/  [J[01;34mscripts[0m/       [J[01;34mviews[0m/       [J[A[0m[27m[24m[24Ccd main_app/[Knode_modules[1m/[0m
+[J[7mnode_modules/[0m  [J[01;34mscripts[0m/       [J[01;34mviews[0m/       [J[A[0m[27m[24m[24Ccd main_app/node_modules[1m/[0m[K
+[7mnode_modules/[0m  [7mnode_modules/[0m  [A[0m[27m[24m[24Ccd main_app/node_modules[1m/[0m[K[13Dscripts[1m/[0m    [0m 
+[15C[7mscripts/     [0m  [01;34mnode_modules[0m/  [A[0m[27m[24m[24Ccd main_app/scripts[1m/[0m[K
+[J[A[44C[0m [?1l>[?2004l
+[J]2;cd main_app/scripts]1;cd[1m[7m%[27m[1m[0m                                                                                                                                            ]2;ubuntu@mqttbay:~/MQTTbay/main_app/scripts]1;..n_app/scripts[0m[27m[24m[J[01;32m➜  [36mscripts[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hl[?1l>[?2004l
+]2;ls --color=tty -lah]1;ltotal 28K
+drwxrwxr-x 2 ubuntu ubuntu 4.0K Jul 10 17:51 [0m[01;34m.[0m
+drwxrwxr-x 5 ubuntu ubuntu 4.0K Jul 10 17:50 [01;34m..[0m
+-rw-rw-r-- 1 ubuntu ubuntu  338 Jul  8 16:41 addArticle.js
+-rw-rw-r-- 1 ubuntu ubuntu  717 Jul  8 16:42 authorizeUser.js
+-rw-rw-r-- 1 ubuntu ubuntu 2.4K Jul  8 16:42 login.js
+-rw-rw-r-- 1 ubuntu ubuntu 1.6K Jul 10 16:11 main.js
+-rw-rw-r-- 1 ubuntu ubuntu  820 Jul 10 17:50 mqtt.js
+[1m[7m%[27m[1m[0m                                                                                                                                            ]2;ubuntu@mqttbay:~/MQTTbay/main_app/scripts]1;..n_app/scripts[0m[27m[24m[J[01;32m➜  [36mscripts[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hvvm mqtt.js[1m [0m[0m fro    m[13D          [2C [13Dvvi mqtt.js[1m [0m[0m [?1l>[?2004l
+]2;nvim mqtt.js]1;vi[?1049h[22;0;0t[22;0t[?1h=[H[2J]11;?[?2004h[?25h[?25l(B[m[H[2J]112[2 q]112[2 q[?25h[?25l[93m  1 (B[0;1m[96mlet(B[m clientId = uuidv4();[K
+[93m  2 (B[m[K
+[93m  3 (B[0;1m[96mvar(B[m client = [93mnew(B[m Paho.MQTT.Client([95m'16996205-7370-4149-bed2-ae69b3073539.ul.bw-cloud-instance.org'(B[m, 9001, clientId);[K
+[93m  4 (B[mclient.onMessageArrived = onMessageArrived;[K
+[93m  5 (B[mclient.onConnectionLost = onConnectionLost;[K
+[93m  6 (B[mclient.connect((B[0;1m[96m{(B[monSuccess:onConnect(B[0;1m[96m}(B[m);[K
+[93m  7 (B[m[K
+[93m  8 (B[0;1m[96mfunction(B[m onConnect() (B[0;1m[96m{(B[m[K
+[93m  9 (B[m[96m[48;5;242m+--  7 lines: console.log('connected');·································································································
+(B[m[93m 16 (B[0;1m[96m}(B[m[K
+[93m 17 (B[m[K
+[93m 18 (B[0;1m[96mfunction(B[m onMessageArrived(message) (B[0;1m[96m{(B[m[K
+[93m 19 (B[m  console.log([95m'message arrived: '(B[m, message.payloadString);[K
+[93m 20 (B[0;1m[96m}(B[m[K
+[93m 21 (B[m[K
+[93m 22 (B[0;1m[96mfunction(B[m onConnectionLost(responseObject)(B[0;1m[96m{(B[m[K
+[93m 23 (B[m[96m[48;5;242m+--  3 lines: if (responseObject.errorCode !== 0) {·····················································································
+(B[m[93m 26 (B[0;1m[96m}(B[m[K
+[94m~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+(B[0;1;7mmqtt.js                                                                                                                   1,1            All[1;5H[?25h[?25l[?1004h[?25h[?25l[75;130H(B[mj         [1;5H[?25h[?25l[75;130H [1;5H[?25h[?25l[74;123H(B[0;1;7m2,0-1[2;5H[?25h[?25l[75;130H(B[mj[2;5H[?25h[?25l[75;130H [2;5H[?25h[?25l[74;123H(B[0;1;7m3,1  [3;5H[?25h[?25l[75;130H(B[mj[3;5H[?25h[?25l[75;130H [3;5H[?25h[?25l[74;123H(B[0;1;7m4[4;5H[?25h[?25l[75;130H(B[mz[4;5H[?25h[?25l[75;131HR[4;5H[?25h[?25l[75;130H  [4;5H[?25h[?25l[5B  console.log([95m'connected'(B[m);[K[10;3H[93m0 (B[m  client.subscribe([95m'register/'(B[m + clientId, (B[0;1m[96m{(B[monSuccess: (B[0;1m[96mfunction(B[m () (B[0;1m[96m{[11;3H(B[m[93m1 (B[m      (B[0;1m[96mlet(B[m registrationMessage = [93mnew(B[m Paho.MQTT.Message(clientId);[12;3H[93m2 (B[m      registrationMessage.destinationName = [95m'register'(B[m;[13;3H[93m3 (B[m      client.send(registrationMessage);[19X[14;2H[93m14 (B[m    (B[0;1m[96m}[15;2H(B[m[93m15 (B[m  (B[0;1m[96m}(B[m);[16;2H[93m16 (B[0;1m[96m}(B[m[41X[17;2H[93m17 (B[m[K[18;2H[93m18 (B[0;1m[96mfunction(B[m onMessageArrived(message) (B[0;1m[96m{
+(B[m[93m 19 (B[m  console.log([95m'message arrived: '(B[m, message.payloadString);[K
+[93m 20 (B[0;1m[96m}(B[m[K
+[93m 21 (B[m[K
+[93m 22 (B[0;1m[96mfunction(B[m onConnectionLost(responseObject)(B[0;1m[96m{(B[m[K
+[93m 23 (B[m  [93mif(B[m (responseObject.errorCode !== 0) (B[0;1m[96m{(B[m[K
+[93m 24 (B[m    console.log([95m"onConnectionLost:"(B[m+responseObject.errorMessage);[K
+[93m 25 (B[m  (B[0;1m[96m}(B[m[K
+[93m 26 (B[0;1m[96m}(B[m[K[4;5H[?25h[?25l[75;130Hj[4;5H[?25h[?25l[75;130H [4;5H[?25h[?25l[74;123H(B[0;1;7m5[5;5H[?25h[?25l[75;130H(B[mk[5;5H[?25h[?25l[75;130H [5;5H[?25h[?25l[74;123H(B[0;1;7m4[4;5H[?25h[?25l[75;130H(B[mk[4;5H[?25h[?25l[75;130H [4;5H[?25h[?25l[74;123H(B[0;1;7m3[3;5H[?25h[?25l[75;130H(B[mk[3;5H[?25h[?25l[75;130H [3;5H[?25h[?25l[74;123H(B[0;1;7m2,0-1[2;5H[?25h[?25l[75;130H(B[mk[2;5H[?25h[?25l[75;130H [2;5H[?25h[?25l[74;123H(B[0;1;7m1,1  [1;5H[?25h[?25l[75;130H(B[mj[1;5H[?25h[?25l[75;130H [1;5H[?25h[?25l[74;123H(B[0;1;7m2,0-1[2;5H[?25h[?25l[75;130H(B[mk[2;5H[?25h[?25l[75;130H [2;5H[?25h[?25l[74;123H(B[0;1;7m1,1  [1;5H[?25h[?25l[75;130H(B[mj[1;5H[?25h[?25l[75;130H [1;5H[?25h[?25l[74;123H(B[0;1;7m2,0-1[2;5H[?25h[?25l[75;130H(B[mj[2;5H[?25h[?25l[75;130H [2;5H[?25h[?25l[74;123H(B[0;1;7m3,1  [3;5H[?25h[?25l[75;130H(B[mk[3;5H[?25h[?25l[75;130H [3;5H[?25h[?25l[74;123H(B[0;1;7m2,0-1[2;5H[?25h[?25l[75;130H(B[mk[2;5H[?25h[?25l[75;130H [2;5H[?25h[?25l[74;123H(B[0;1;7m1,1  [1;5H[?25h[?25l[75;130H(B[mk[1;5H[?25h[?25l[75;130H [1;5H[?25h[?25l[75;130HO[1;5H[?25h[?25l[75;130H ]112[6 q[1;5H[?25h[?25l[74B(B[0;1m-- INSERT --(B[m[K[?25h[?25l[1;5H[24X
+(B[0;1m[96mlet(B[m clientId = uuidv4();[3;5H[115X
+(B[0;1m[96mvar(B[m client = [93mnew(B[m Paho.MQTT.Client([95m'16996205-7370-4149-bed2-ae69b3073539.ul.bw-cloud-instance.org'(B[m, 9001, clientId);[5;14HMessageArrived = onMessageArrived[6;12HonConnectionLost = onConnectionLost;[7;5Hclient.connect((B[0;1m[96m{(B[monSuccess:onConnect(B[0;1m[96m}(B[m);[8;5H[22X
+(B[0;1m[96mfunction(B[m onConnect() (B[0;1m[96m{(B[m[5X[10;8Honsole.log([95m'connected'(B[m);[41X[11;7Hclient.subscribe([95m'register/'(B[m + clientId, (B[0;1m[96m{(B[monSuccess: (B[0;1m[96mfunction(B[m () (B[0;1m[96m{[12;11Hlet(B[m registrationMessage = [93mnew(B[m Paho.MQTT.Message(clientId);[13;11HregistrationMessage.destinationName = [95m'register'(B[m;[14;9H  client.send(registrationMessage);[15;7H  (B[0;1m[96m}[16;5H(B[m  (B[0;1m[96m}(B[m);[17;5H(B[0;1m[96m}(B[m[18;5H[36X
+(B[0;1m[96mfunction(B[m onMessageArrived(message) (B[0;1m[96m{(B[m[22X[20;5H  console.log([95m'message arrived: '(B[m, message.payloadString);[21;5H(B[0;1m[96m}(B[m[22;5H[42X
+(B[0;1m[96mfunction(B[m onConnectionLost(responseObject)(B[0;1m[96m{[24;7H(B[m[93mif(B[m (responseObject.errorCode !== 0) (B[0;1m[96m{(B[m[26X[25;7H  console.log([95m"onConnectionLost:"(B[m+responseObject.errorMessage);[26;5H  (B[0;1m[96m}
+(B[m[93m 27 (B[0;1m[96m}(B[m[K[74;9H(B[0;1;7m[+][1;5H[?25h[?25l(B[mf[74;125H(B[0;1;7m2[1;6H[?25h[?25l(B[mu[74;125H(B[0;1;7m3[1;7H[?25h[?25l(B[mn[74;125H(B[0;1;7m4[1;8H[?25h[?25l(B[mc[74;125H(B[0;1;7m5[1;9H[?25h[?25l(B[mt[74;125H(B[0;1;7m6[1;10H[?25h[?25l(B[mo[74;125H(B[0;1;7m7[1;11H[?25h[?25l(B[mi[74;125H(B[0;1;7m8[1;12H[?25h[?25l(B[m [74;125H(B[0;1;7m7[1;11H[?25h[?25l(B[m [74;125H(B[0;1;7m6[1;10H[?25h[?25l(B[mi[74;125H(B[0;1;7m7[1;11H[?25h[?25l(B[mo[74;125H(B[0;1;7m8[1;12H[?25h[?25l[7D(B[0;1m[96mfunction[74;125H(B[0;1;7m9[1;13H[?25h[?25l[74;125H10[1;14H[?25h[?25l(B[ms[74;126H(B[0;1;7m1[1;15H[?25h[?25l(B[me[74;126H(B[0;1;7m2[1;16H[?25h[?25l(B[mt[74;126H(B[0;1;7m3[1;17H[?25h[?25l(B[mu[74;126H(B[0;1;7m4[1;18H[?25h[?25l(B[mp[74;126H(B[0;1;7m5[1;19H[?25h[?25l(B[mT[74;126H(B[0;1;7m6[1;20H[?25h[?25l(B[mu[74;126H(B[0;1;7m7[1;21H[?25h[?25l(B[mo[74;126H(B[0;1;7m8[1;22H[?25h[?25l(B[m [74;126H(B[0;1;7m7[1;21H[?25h[?25l(B[m [74;126H(B[0;1;7m6[1;20H[?25h[?25l(B[m [74;126H(B[0;1;7m5[1;19H[?25h[?25l(B[mC[74;126H(B[0;1;7m6[1;20H[?25h[?25l(B[mo[74;126H(B[0;1;7m7[1;21H[?25h[?25l(B[mn[74;126H(B[0;1;7m8[1;22H[?25h[?25l(B[mn[74;126H(B[0;1;7m9[1;23H[?25h[?25l(B[me[74;125H(B[0;1;7m20[1;24H[?25h[?25l(B[mt[74;126H(B[0;1;7m1[1;25H[?25h[?25l(B[mi[74;126H(B[0;1;7m2[1;26H[?25h[?25l(B[mo[74;126H(B[0;1;7m3[1;27H[?25h[?25l(B[mn[74;126H(B[0;1;7m4[1;28H[?25h[?25l(B[m [74;126H(B[0;1;7m3[1;27H[?25h[?25l(B[m [74;126H(B[0;1;7m2[1;26H[?25h[?25l(B[m [74;126H(B[0;1;7m1[1;25H[?25h[?25l(B[m [74;126H(B[0;1;7m0[1;24H[?25h[?25l(B[mc[74;126H(B[0;1;7m1[1;25H[?25h[?25l(B[mt[74;126H(B[0;1;7m2[1;26H[?25h[?25l(B[mi[74;126H(B[0;1;7m3[1;27H[?25h[?25l(B[mo[74;126H(B[0;1;7m4[1;28H[?25h[?25l(B[mn[74;126H(B[0;1;7m5[1;29H[?25h[?25l(B[m([74;126H(B[0;1;7m6[1;30H[?25h[?25l(B[m)[46m()[74;126H(B[0;1;7m7[1;31H[?25h[?25l(B[m()[74;126H(B[0;1;7m8[1;32H[?25h[?25l(B[0;1m[96m{[74;126H(B[0;1;7m9[1;33H[?25h[?25l[2;5H(B[m  [22X[3;5H(B[0;1m[96mlet(B[m clientId = uuidv4();[4;5H[115X
+(B[0;1m[96mvar(B[m client = [93mnew(B[m Paho.MQTT.Client([95m'16996205-7370-4149-bed2-ae69b3073539.ul.bw-cloud-instance.org'(B[m, 9001, clientId);[6;14HMessageArrived = onMessageArrived[7;12HonConnectionLost = onConnectionLost;[8;5Hclient.connect((B[0;1m[96m{(B[monSuccess:onConnect(B[0;1m[96m}(B[m);[9;5H[22X
+(B[0;1m[96mfunction(B[m onConnect() (B[0;1m[96m{(B[m[5X[11;8Honsole.log([95m'connected'(B[m);[41X[12;7Hclient.subscribe([95m'register/'(B[m + clientId, (B[0;1m[96m{(B[monSuccess: (B[0;1m[96mfunction(B[m () (B[0;1m[96m{[13;11Hlet(B[m registrationMessage = [93mnew(B[m Paho.MQTT.Message(clientId);[14;11HregistrationMessage.destinationName = [95m'register'(B[m;[15;9H  client.send(registrationMessage);[16;7H  (B[0;1m[96m}[17;5H(B[m  (B[0;1m[96m}(B[m);[18;5H(B[0;1m[96m}(B[m[19;5H[36X
+(B[0;1m[96mfunction(B[m onMessageArrived(message) (B[0;1m[96m{(B[m[22X[21;5H  console.log([95m'message arrived: '(B[m, message.payloadString);[22;5H(B[0;1m[96m}(B[m[23;5H[42X
+(B[0;1m[96mfunction(B[m onConnectionLost(responseObject)(B[0;1m[96m{[25;7H(B[m[93mif(B[m (responseObject.errorCode !== 0) (B[0;1m[96m{(B[m[26X[26;7H  console.log([95m"onConnectionLost:"(B[m+responseObject.errorMessage);[27;5H  (B[0;1m[96m}
+(B[m[93m 28 (B[0;1m[96m}(B[m[K[74;123H(B[0;1;7m2,3 [2;7H[?25h[?25l(B[0;1m[96m}[1;32H(B[0;1m[96m[46m{[2;5H}[74;125H(B[0;1;7m2[2;6H[?25h[?25l(B[m[73B[12X]112[2 q[2;6H[?25h[?25l[74;125H(B[0;1;7m1[2;5H[?25h[?25l[75;130H(B[mj[2;5H[?25h[?25l[75;130H [2;5H[?25h[?25l[1;32H(B[0;1m[96m{[2;5H}[74;123H(B[0;1;7m3[3;5H[?25h[?25l[75;130H(B[mV[3;5H[?25h[?25l]112[2 q[?25h[?25l[75;130H1[3;5H[?25h[?25l[C(B[0;1m[96m[48;5;242met(B[m[48;5;242m clientId = uuidv4();[24D[?25h[?25l[72B(B[0;1m-- VISUAL LINE --(B[m[112C [113D[?25h[?25l[112C1[3;5H[?25h[?25l[75;130HG[3;5H[?25h[?25l[75;130H26[3;5H[?25h[?25l(B[0;1m[96m[48;5;242ml[4;5H(B[m[48;5;242m [5;5H(B[0;1m[96m[48;5;242mvar(B[m[48;5;242m client = (B[m[93m[48;5;242mnew(B[m[48;5;242m Paho.MQTT.Client((B[m[95m[48;5;242m'16996205-7370-4149-bed2-ae69b3073539.ul.bw-cloud-instance.org'(B[m[48;5;242m, 9001, clientId);[6;5Hclient.onMessageArrived = onMessageArrived;[7;5Hclient.onConnectionLost = onConnectionLost;[8;5Hclient.connect((B[0;1m[96m[48;5;242m{(B[m[48;5;242monSuccess:onConnect(B[0;1m[96m[48;5;242m}(B[m[48;5;242m);[9;5H [10;5H(B[0;1m[96m[48;5;242mfunction(B[m[48;5;242m onConnect() (B[0;1m[96m[48;5;242m{[11;5H(B[m[48;5;242m  console.log((B[m[95m[48;5;242m'connected'(B[m[48;5;242m);[12;5H  client.subscribe((B[m[95m[48;5;242m'register/'(B[m[48;5;242m + clientId, (B[0;1m[96m[48;5;242m{(B[m[48;5;242monSuccess: (B[0;1m[96m[48;5;242mfunction(B[m[48;5;242m () (B[0;1m[96m[48;5;242m{[13;5H(B[m[48;5;242m      (B[0;1m[96m[48;5;242mlet(B[m[48;5;242m registrationMessage = (B[m[93m[48;5;242mnew(B[m[48;5;242m Paho.MQTT.Message(clientId);[14;5H      registrationMessage.destinationName = (B[m[95m[48;5;242m'register'(B[m[48;5;242m;[15;5H      client.send(registrationMessage);[16;5H    (B[0;1m[96m[48;5;242m}[17;5H(B[m[48;5;242m  (B[0;1m[96m[48;5;242m}(B[m[48;5;242m);[18;5H(B[0;1m[96m[48;5;242m}[19;5H(B[m[48;5;242m [20;5H(B[0;1m[96m[48;5;242mfunction(B[m[48;5;242m onMessageArrived(message) (B[0;1m[96m[48;5;242m{[21;5H(B[m[48;5;242m  console.log((B[m[95m[48;5;242m'message arrived: '(B[m[48;5;242m, message.payloadString);[22;5H(B[0;1m[96m[48;5;242m}[23;5H(B[m[48;5;242m [24;5H(B[0;1m[96m[48;5;242mfunction(B[m[48;5;242m onConnectionLost(responseObject)(B[0;1m[96m[48;5;242m{[25;5H(B[m[48;5;242m  (B[m[93m[48;5;242mif(B[m[48;5;242m (responseObject.errorCode !== 0) (B[0;1m[96m[48;5;242m{[26;5H(B[m[48;5;242m    console.log((B[m[95m[48;5;242m"onConnectionLost:"(B[m[48;5;242m+responseObject.errorMessage);[27;5H  (B[0;1m[96m[48;5;242m}[28;5H(B[0;1m[96m[46m}[74;123H(B[0;1;7m28,1[28;5H[?25h[?25l[75;130H(B[md [28;5H[?25h[?25l[47B26 fewer lines[116X]112[2 q[?25h[?25l[1;32H(B[0;1m[96m[46m{[2;5H}
+(B[m[94m~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K(B[m[47B[14X26 fewer lines[74;124H(B[0;1;7m,1 [2;5H[?25h[?25l[75;130H(B[mP[2;5H[?25h[?25l[75;4Hmore lines[117X[?25h[?25l[1;32H(B[0;1m[96m{[2;5Hlet(B[m clientId = uuidv4();
+[93m  3 (B[m[K
+[93m  4 (B[0;1m[96mvar(B[m client = [93mnew(B[m Paho.MQTT.Client([95m'16996205-7370-4149-bed2-ae69b3073539.ul.bw-cloud-instance.org'(B[m, 9001, clientId);[K
+[93m  5 (B[mclient.onMessageArrived = onMessageArrived;[K
+[93m  6 (B[mclient.onConnectionLost = onConnectionLost;[K
+[93m  7 (B[mclient.connect((B[0;1m[96m{(B[monSuccess:onConnect(B[0;1m[96m}(B[m);[K
+[93m  8 (B[m[K
+[93m  9 (B[0;1m[96mfunction(B[m onConnect() (B[0;1m[96m{(B[m[K
+[93m 10 (B[m  console.log([95m'connected'(B[m);[K
+[93m 11 (B[m  client.subscribe([95m'register/'(B[m + clientId, (B[0;1m[96m{(B[monSuccess: (B[0;1m[96mfunction(B[m () (B[0;1m[96m{(B[m[K
+[93m 12 (B[m      (B[0;1m[96mlet(B[m registrationMessage = [93mnew(B[m Paho.MQTT.Message(clientId);[K
+[93m 13 (B[m      registrationMessage.destinationName = [95m'register'(B[m;[K
+[93m 14 (B[m      client.send(registrationMessage);[K
+[93m 15 (B[m    (B[0;1m[96m}(B[m[K
+[93m 16 (B[m  (B[0;1m[96m}(B[m);[K
+[93m 17 (B[0;1m[96m}(B[m[K
+[93m 18 (B[m[K
+[93m 19 (B[0;1m[96mfunction(B[m onMessageArrived(message) (B[0;1m[96m{(B[m[K
+[93m 20 (B[m  console.log([95m'message arrived: '(B[m, message.payloadString);[K
+[93m 21 (B[0;1m[96m}(B[m[K
+[93m 22 (B[m[K
+[93m 23 (B[0;1m[96mfunction(B[m onConnectionLost(responseObject)(B[0;1m[96m{(B[m[K
+[93m 24 (B[m  [93mif(B[m (responseObject.errorCode !== 0) (B[0;1m[96m{(B[m[K
+[93m 25 (B[m    console.log([95m"onConnectionLost:"(B[m+responseObject.errorMessage);[K
+[93m 26 (B[m  (B[0;1m[96m}(B[m[K
+[93m 27 (B[0;1m[96m}(B[m[K
+[93m 28 (B[0;1m[96m}(B[m[K[2;5H[?25h[?25l[75;130HV[2;5H[?25h[?25l]112[2 q[?25h[?25l[75;130H1[2;5H[?25h[?25l[C(B[0;1m[96m[48;5;242met(B[m[48;5;242m clientId = uuidv4();[24D[?25h[?25l[73B(B[0;1m-- VISUAL LINE --(B[m[112C [113D[?25h[?25l[112C1[2;5H[?25h[?25l[75;130H2[2;5H[?25h[?25l[75;131H7[2;5H[?25h[?25l[75;132HG[2;5H[?25h[?25l[75;131H6 [2;5H[?25h[?25l(B[0;1m[96m[48;5;242ml[3;5H(B[m[48;5;242m [4;5H(B[0;1m[96m[48;5;242mvar(B[m[48;5;242m client = (B[m[93m[48;5;242mnew(B[m[48;5;242m Paho.MQTT.Client((B[m[95m[48;5;242m'16996205-7370-4149-bed2-ae69b3073539.ul.bw-cloud-instance.org'(B[m[48;5;242m, 9001, clientId);[5;5Hclient.onMessageArrived = onMessageArrived;[6;5Hclient.onConnectionLost = onConnectionLost;[7;5Hclient.connect((B[0;1m[96m[48;5;242m{(B[m[48;5;242monSuccess:onConnect(B[0;1m[96m[48;5;242m}(B[m[48;5;242m);[8;5H [9;5H(B[0;1m[96m[48;5;242mfunction(B[m[48;5;242m onConnect() (B[0;1m[96m[48;5;242m{[10;5H(B[m[48;5;242m  console.log((B[m[95m[48;5;242m'connected'(B[m[48;5;242m);[11;5H  client.subscribe((B[m[95m[48;5;242m'register/'(B[m[48;5;242m + clientId, (B[0;1m[96m[48;5;242m{(B[m[48;5;242monSuccess: (B[0;1m[96m[48;5;242mfunction(B[m[48;5;242m () (B[0;1m[96m[48;5;242m{[12;5H(B[m[48;5;242m      (B[0;1m[96m[48;5;242mlet(B[m[48;5;242m registrationMessage = (B[m[93m[48;5;242mnew(B[m[48;5;242m Paho.MQTT.Message(clientId);[13;5H      registrationMessage.destinationName = (B[m[95m[48;5;242m'register'(B[m[48;5;242m;[14;5H      client.send(registrationMessage);[15;5H    (B[0;1m[96m[48;5;242m}[16;5H(B[m[48;5;242m  (B[0;1m[96m[48;5;242m}(B[m[48;5;242m);[17;5H(B[0;1m[96m[48;5;242m}[18;5H(B[m[48;5;242m [19;5H(B[0;1m[96m[48;5;242mfunction(B[m[48;5;242m onMessageArrived(message) (B[0;1m[96m[48;5;242m{[20;5H(B[m[48;5;242m  console.log((B[m[95m[48;5;242m'message arrived: '(B[m[48;5;242m, message.payloadString);[21;5H(B[0;1m[96m[48;5;242m}[22;5H(B[m[48;5;242m [23;5H(B[0;1m[96m[48;5;242mfunction(B[m[48;5;242m onConnectionLost(responseObject)(B[0;1m[96m[48;5;242m{[24;5H(B[m[48;5;242m  (B[m[93m[48;5;242mif(B[m[48;5;242m (responseObject.errorCode !== 0) (B[0;1m[96m[48;5;242m{[25;5H(B[m[48;5;242m    console.log((B[m[95m[48;5;242m"onConnectionLost:"(B[m[48;5;242m+responseObject.errorMessage);[26;5H  (B[0;1m[96m[48;5;242m}[27;5H(B[0;1m[96m[46m}[74;124H(B[0;1;7m7,1[27;5H[?25h[?25l[75;130H(B[m> [27;5H[?25h[?25l[48B26 lines >ed 1 time[110C ]112[2 q[111D[?25h[?25l[2;5H  (B[0;1m[96mlet(B[m clientId = uuidv4();[3;5H [4;5H  (B[0;1m[96mvar(B[m client = [93mnew(B[m Paho.MQTT.Client([95m'16996205-7370-4149-bed2-ae69b3073539.ul.bw-cloud-instance.org'(B[m, 9001, clientId);[5;5H  client.onMessageArrived = onMessageArrived;[6;5H  client.onConnectionLost = onConnectionLost;[7;5H  client.connect((B[0;1m[96m{(B[monSuccess:onConnect(B[0;1m[96m}(B[m);[8;5H [9;5H  (B[0;1m[96mfunction(B[m onConnect() (B[0;1m[96m{[10;5H(B[m    console.log([95m'connected'(B[m);[11;5H    client.subscribe([95m'register/'(B[m + clientId, (B[0;1m[96m{(B[monSuccess: (B[0;1m[96mfunction(B[m () (B[0;1m[96m{[12;5H(B[m[96m[48;5;242m+-----  3 lines: let registrationMessage = new Paho.MQTT.Message(clientId);·····························································[13;3H(B[m[93m5 (B[m      (B[0;1m[96m}(B[m[48X[14;3H[93m6 (B[m    (B[0;1m[96m}(B[m);[32X[15;3H[93m7 (B[m  (B[0;1m[96m}(B[m  [16;3H[93m8 (B[m[5X[17;3H[93m9 (B[m  (B[0;1m[96mfunction(B[m onMessageArrived(message) (B[0;1m[96m{[18;2H(B[m[93m20 (B[m    console.log([95m'message arrived: '(B[m, message.payloadString);[19;2H[93m21 (B[m  (B[0;1m[96m}(B[m[33X[20;3H[93m2 (B[m[58X[21;3H[93m3 (B[m  (B[0;1m[96mfunction(B[m onConnectionLost(responseObject)(B[0;1m[96m{[22;3H(B[m[93m4 (B[m    [93mif(B[m (responseObject.errorCode !== 0) (B[0;1m[96m{[23;3H(B[m[93m5 (B[m      console.log([95m"onConnectionLost:"(B[m+responseObject.errorMessage);[24;3H[93m6 (B[m    (B[0;1m[96m}(B[m[34X[25;3H[93m7 (B[m  (B[0;1m[96m}(B[m[62X[26;3H[93m8 (B[0;1m[96m}(B[m  
+[94m~[K
+~[K[74;124H(B[0;1;7m,1 (B[m
+[19X26 lines >ed 1 time[2;5H[?25h[?25l[73BType  :qa!  and press <Enter> to abandon all changes and exit Nvim[?25h[?25l[2;5H[?25h[?25l[75;130Hz[2;5H[?25h[?25l[75;131HR[2;5H[?25h[?25l[75;130H  [2;5H[?25h[?25l[10B        (B[0;1m[96mlet(B[m registrationMessage = [93mnew(B[m Paho.MQTT.Message(clientId);[K[13;3H[93m3 (B[m        registrationMessage.destinationName = [95m'register'(B[m;[14;3H[93m4 (B[m        client.send(registrationMessage);[15;3H[93m5 (B[m      (B[0;1m[96m}[16;3H(B[m[93m6 (B[m    (B[0;1m[96m}(B[m);[17;3H[93m7 (B[m  (B[0;1m[96m}(B[m[35X[18;2H[93m18 (B[m[60X[19;2H[93m19 (B[m  (B[0;1m[96mfunction(B[m onMessageArrived(message) (B[0;1m[96m{[20;3H(B[m[93m0 (B[m    console.log([95m'message arrived: '(B[m, message.payloadString);[21;3H[93m1 (B[m  (B[0;1m[96m}(B[m[41X[22;3H[93m2 (B[m[41X[23;3H[93m3 (B[m  (B[0;1m[96mfunction(B[m onConnectionLost(responseObject)(B[0;1m[96m{(B[m[23X[24;3H[93m4 (B[m    [93mif(B[m (responseObject.errorCode !== 0) (B[0;1m[96m{[25;3H(B[m[93m5 (B[m      console.log([95m"onConnectionLost:"(B[m+responseObject.errorMessage);[26;3H[93m6 (B[m    (B[0;1m[96m}
+(B[m[93m 27 (B[m  (B[0;1m[96m}(B[m[K
+[93m 28 (B[0;1m[96m}(B[m[K[2;5H[?25h[?25l[75;130H:[2;5H[?25h[?25l[73B[130X:]112[2 q[?25h[?25lw[?25h[?25l[75;1H[?25h[?25l"mqtt.js"]112[2 q[?25h[?25l[C28L, 895C written[?25h[?25l(B[0;1;7m[74;9H   [2;5H[?25h[?25l[75;130H(B[mZ[2;5H[?25h[?25l[75;131HZ[2;5H[?25h[?25l[73B[?25h[?25l]112[2 q(B[m[?25h[?1l>[?1049l[23;0;0t[23;0t[?2004l[?1004l[?25h[1m[7m%[27m[1m[0m                                                                                                                                            ]2;ubuntu@mqttbay:~/MQTTbay/main_app/scripts]1;..n_app/scripts[0m[27m[24m[J[01;32m➜  [36mscripts[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hl[?1l>[?2004l
+]2;ls --color=tty -lah]1;ltotal 28K
+drwxrwxr-x 2 ubuntu ubuntu 4.0K Jul 10 17:52 [0m[01;34m.[0m
+drwxrwxr-x 5 ubuntu ubuntu 4.0K Jul 10 17:50 [01;34m..[0m
+-rw-rw-r-- 1 ubuntu ubuntu  338 Jul  8 16:41 addArticle.js
+-rw-rw-r-- 1 ubuntu ubuntu  717 Jul  8 16:42 authorizeUser.js
+-rw-rw-r-- 1 ubuntu ubuntu 2.4K Jul  8 16:42 login.js
+-rw-rw-r-- 1 ubuntu ubuntu 1.6K Jul 10 16:11 main.js
+-rw-rw-r-- 1 ubuntu ubuntu  895 Jul 10 17:52 mqtt.js
+[1m[7m%[27m[1m[0m                                                                                                                                            ]2;ubuntu@mqttbay:~/MQTTbay/main_app/scripts]1;..n_app/scripts[0m[27m[24m[J[01;32m➜  [36mscripts[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hvvi main.js[1m [0m[0m [?1l>[?2004l
+]2;nvim main.js]1;vi[?1049h[22;0;0t[22;0t[?1h=[H[2J]11;?[?2004h[?25h[?25l(B[m[H[2J]112[2 q]112[2 q[?25h[?25l[93m  1 window(B[m.onload = [93masync(B[m (B[0;1m[96mfunction(B[m() (B[0;1m[96m{(B[m[K
+[93m  2 (B[m[K
+[93m  3 (B[m[96m[48;5;242m+-- 41 lines: if(checkAccessToken()) {··································································································
+(B[m[93m 44 (B[0;1m[96m}(B[m;[K
+[94m~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+(B[0;1;7mmain.js                                                                                                                   1,1            All[1;5H[?25h[?25l[?1004h[?25h[?25l[75;130H(B[mz         [1;5H[?25h[?25l[75;131HR[1;5H[?25h[?25l[75;130H  [1;5H[?25h[?25l
+
+    [93mif(B[m(checkAccessToken()) (B[0;1m[96m{(B[m[K[4;2H[93m 4 (B[m        buttonAddArticle = [93mdocument(B[m.getElementById([95m'buttonAddArticle'(B[m);
+[93m  5 (B[m        buttonAddArticle.addEventListener([95m'click'(B[m, () => (B[0;1m[96m{(B[m[K
+[93m  6 (B[m            [93mdocument(B[m.[93mlocation(B[m.href = origin + [95m"/addArticle"(B[m;[K
+[93m  7 (B[m        (B[0;1m[96m}(B[m);        [K
+[93m  8 (B[m[K
+[93m  9 (B[m      [96m/////////////////////////////////////////////////////////////////////////////////////////////////////////////////(B[m[K
+[93m 10 (B[m[K
+[93m 11 (B[m        (B[0;1m[96mlet(B[m clientId = uuidv4();[K
+[93m 12 (B[m[K
+[93m 13 (B[m        (B[0;1m[96mvar(B[m client = [93mnew(B[m Paho.MQTT.Client([95m'16996205-7370-4149-bed2-ae69b3073539.ul.bw-cloud-instance.org'(B[m, 9001, clientId);[K
+[93m 14 (B[m        client.onMessageArrived = onMessageArrived;[K
+[93m 15 (B[m        client.onConnectionLost = onConnectionLost;[K
+[93m 16 (B[m        client.connect((B[0;1m[96m{(B[monSuccess:onConnect(B[0;1m[96m}(B[m);[K
+[93m 17 (B[m[K
+[93m 18 (B[m        (B[0;1m[96mfunction(B[m onConnect() (B[0;1m[96m{(B[m[K
+[93m 19 (B[m          console.log([95m'connected'(B[m);[K
+[93m 20 (B[m          client.subscribe([95m'register/'(B[m + clientId, (B[0;1m[96m{(B[monSuccess: (B[0;1m[96mfunction(B[m () (B[0;1m[96m{(B[m[K
+[93m 21 (B[m              (B[0;1m[96mlet(B[m registrationMessage = [93mnew(B[m Paho.MQTT.Message(clientId);[K
+[93m 22 (B[m              registrationMessage.destinationName = [95m'register'(B[m;[K
+[93m 23 (B[m              client.send(registrationMessage);[K
+[93m 24 (B[m            (B[0;1m[96m}(B[m[K
+[93m 25 (B[m          (B[0;1m[96m}(B[m);[K
+[93m 26 (B[m        (B[0;1m[96m}(B[m[K
+[93m 27 (B[m[K
+[93m 28 (B[m        (B[0;1m[96mfunction(B[m onMessageArrived(message) (B[0;1m[96m{(B[m[K
+[93m 29 (B[m          console.log([95m'message arrived: '(B[m, message.payloadString);[K
+[93m 30 (B[m        (B[0;1m[96m}(B[m[K
+[93m 31 (B[m[K
+[93m 32 (B[m        (B[0;1m[96mfunction(B[m onConnectionLost(responseObject)(B[0;1m[96m{(B[m[K
+[93m 33 (B[m          [93mif(B[m (responseObject.errorCode !== 0) (B[0;1m[96m{(B[m[K
+[93m 34 (B[m            console.log([95m"onConnectionLost:"(B[m+responseObject.errorMessage);[K
+[93m 35 (B[m          (B[0;1m[96m}(B[m[K
+[93m 36 (B[m        (B[0;1m[96m}(B[m[K
+[93m 37 (B[m[K
+[93m 38 (B[m      [96m/////////////////////////////////////////////////////////////////////////////////////////////////////////////////(B[m[K
+[93m 39 (B[m[K
+[93m 40 (B[m    (B[0;1m[96m}(B[m[K
+[93m 41 (B[m    [93melse(B[m (B[0;1m[96m{(B[m[K
+[93m 42 (B[m        [93mdocument(B[m.[93mlocation(B[m.href = origin + [95m"/login"(B[m;[K
+[93m 43 (B[m    (B[0;1m[96m}(B[m[K
+[93m 44 (B[0;1m[96m}(B[m;[K[1;5H[?25h[?25l[75;130Hj[1;5H[?25h[?25l[75;130H [1;5H[?25h[?25l[74;123H(B[0;1;7m2,0-1[2;5H[?25h[?25l[75;130H(B[mj[2;5H[?25h[?25l[75;130H [2;5H[?25h[?25l[74;123H(B[0;1;7m3,1  [3;5H[?25h[?25l[75;130H(B[mj[3;5H[?25h[?25l[75;130H [3;5H[?25h[?25l[74;123H(B[0;1;7m4[4;5H[?25h[?25l[75;130H(B[mj[4;5H[?25h[?25l[75;130H [4;5H[?25h[?25l[74;123H(B[0;1;7m5[5;5H[?25h[?25l[75;130H(B[mj[5;5H[?25h[?25l[75;130H [5;5H[?25h[?25l[74;123H(B[0;1;7m6[6;5H[?25h[?25l[75;130H(B[mj[6;5H[?25h[?25l[75;130H [6;5H[?25h[?25l[74;123H(B[0;1;7m7[7;5H[?25h[?25l[75;130H(B[mj[7;5H[?25h[?25l[75;130H [7;5H[?25h[?25l[74;123H(B[0;1;7m8,0-1[8;5H[?25h[?25l[75;130H(B[mj[8;5H[?25h[?25l[75;130H [8;5H[?25h[?25l[74;123H(B[0;1;7m9,1  [9;5H[?25h[?25l[75;130H(B[mj[9;5H[?25h[?25l[75;130H [9;5H[?25h[?25l[74;123H(B[0;1;7m10,0-1[10;5H[?25h[?25l[75;130H(B[mk[10;5H[?25h[?25l[75;130H [10;5H[?25h[?25l[74;123H(B[0;1;7m9,1   [9;5H[?25h[?25l[75;130H(B[mV[9;5H[?25h[?25l]112[2 q[?25h[?25l[75;130H1[9;5H[?25h[?25l[C[48;5;242m     (B[m[96m[48;5;242m/////////////////////////////////////////////////////////////////////////////////////////////////////////////////[119D[?25h[?25l[66B(B[0;1m-- VISUAL LINE --(B[m[K[?25h[?25l[112C1[9;5H[?25h[?25l[75;130H3[9;5H[?25h[?25l[75;131H8[9;5H[?25h[?25l[75;132HG[9;5H[?25h[?25l[75;131H0 [9;5H[?25h[?25l[48;5;242m [10;5H [11;5H        (B[0;1m[96m[48;5;242mlet(B[m[48;5;242m clientId = uuidv4();[12;5H [13;5H        (B[0;1m[96m[48;5;242mvar(B[m[48;5;242m client = (B[m[93m[48;5;242mnew(B[m[48;5;242m Paho.MQTT.Client((B[m[95m[48;5;242m'16996205-7370-4149-bed2-ae69b3073539.ul.bw-cloud-instance.org'(B[m[48;5;242m, 9001, clientId);[14;5H        client.onMessageArrived = onMessageArrived;[15;5H        client.onConnectionLost = onConnectionLost;[16;5H        client.connect((B[0;1m[96m[48;5;242m{(B[m[48;5;242monSuccess:onConnect(B[0;1m[96m[48;5;242m}(B[m[48;5;242m);[17;5H [18;5H        (B[0;1m[96m[48;5;242mfunction(B[m[48;5;242m onConnect() (B[0;1m[96m[48;5;242m{[19;5H(B[m[48;5;242m          console.log((B[m[95m[48;5;242m'connected'(B[m[48;5;242m);[20;5H          client.subscribe((B[m[95m[48;5;242m'register/'(B[m[48;5;242m + clientId, (B[0;1m[96m[48;5;242m{(B[m[48;5;242monSuccess: (B[0;1m[96m[48;5;242mfunction(B[m[48;5;242m () (B[0;1m[96m[48;5;242m{[21;5H(B[m[48;5;242m              (B[0;1m[96m[48;5;242mlet(B[m[48;5;242m registrationMessage = (B[m[93m[48;5;242mnew(B[m[48;5;242m Paho.MQTT.Message(clientId);[22;5H              registrationMessage.destinationName = (B[m[95m[48;5;242m'register'(B[m[48;5;242m;[23;5H              client.send(registrationMessage);[24;5H            (B[0;1m[96m[48;5;242m}[25;5H(B[m[48;5;242m          (B[0;1m[96m[48;5;242m}(B[m[48;5;242m);[26;5H        (B[0;1m[96m[48;5;242m}[27;5H(B[m[48;5;242m [28;5H        (B[0;1m[96m[48;5;242mfunction(B[m[48;5;242m onMessageArrived(message) (B[0;1m[96m[48;5;242m{[29;5H(B[m[48;5;242m          console.log((B[m[95m[48;5;242m'message arrived: '(B[m[48;5;242m, message.payloadString);[30;5H        (B[0;1m[96m[48;5;242m}[31;5H(B[m[48;5;242m [32;5H        (B[0;1m[96m[48;5;242mfunction(B[m[48;5;242m onConnectionLost(responseObject)(B[0;1m[96m[48;5;242m{[33;5H(B[m[48;5;242m          (B[m[93m[48;5;242mif(B[m[48;5;242m (responseObject.errorCode !== 0) (B[0;1m[96m[48;5;242m{[34;5H(B[m[48;5;242m            console.log((B[m[95m[48;5;242m"onConnectionLost:"(B[m[48;5;242m+responseObject.errorMessage);[35;5H          (B[0;1m[96m[48;5;242m}[36;5H(B[m[48;5;242m        (B[0;1m[96m[48;5;242m}[37;5H(B[m[48;5;242m 
+     (B[m[96m[48;5;242m/////////////////////////////////////////////////////////////////////////////////////////////////////////////////[74;123H(B[0;1;7m38,1[38;5H[?25h[?25l[75;130H(B[md [38;5H[?25h[?25l[37B30 fewer lines[116X]112[2 q[?25h[?25l[9;5H[119X
+    (B[0;1m[96m}[11;5H(B[m    [93melse(B[m (B[0;1m[96m{(B[m[22X[12;5H        [93mdocument(B[m.[93mlocation(B[m.href = origin + [95m"/login"(B[m;[13;5H    (B[0;1m[96m}(B[m[118X[14;5H(B[0;1m[96m}(B[m;[49X
+[94m~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K[74;9H(B[0;1;7m[+][111C9,0-1(B[m
+[14X30 fewer lines[9;5H[?25h[?25l[75;130Hi[9;5H[?25h[?25l[75;130H ]112[6 q[9;5H[?25h[?25l[66B(B[0;1m-- INSERT --(B[m  [?25h[?25l[74;125H(B[0;1;7m1  [9;5H[?25h[?25l[74;125H3[9;7H[?25h[?25l[74;125H5[9;9H[?25h[?25l[74;125H7[9;11H[?25h[?25l[74;125H5[9;9H[?25h[?25l[74;125H7[9;11H[?25h[?25l(B[ms[74;125H(B[0;1;7m8[9;12H[?25h[?25l(B[me[74;125H(B[0;1;7m9[9;13H[?25h[?25l(B[mt[74;125H(B[0;1;7m10[9;14H[?25h[?25l(B[mu[74;126H(B[0;1;7m1[9;15H[?25h[?25l(B[mp[74;126H(B[0;1;7m2[9;16H[?25h[?25l(B[mC[74;126H(B[0;1;7m3[9;17H[?25h[?25l(B[mo[74;126H(B[0;1;7m4[9;18H[?25h[?25l(B[mn[74;126H(B[0;1;7m5[9;19H[?25h[?25l(B[mn[74;126H(B[0;1;7m6[9;20H[?25h[?25l(B[me[74;126H(B[0;1;7m7[9;21H[?25h[?25l(B[mc[74;126H(B[0;1;7m8[9;22H[?25h[?25l(B[mt[74;126H(B[0;1;7m9[9;23H[?25h[?25l(B[mi[74;125H(B[0;1;7m20[9;24H[?25h[?25l(B[mo[74;126H(B[0;1;7m1[9;25H[?25h[?25l(B[mn[74;126H(B[0;1;7m2[9;26H[?25h[?25l(B[m9[74;126H(B[0;1;7m3[9;27H[?25h[?25l(B[m0[74;126H(B[0;1;7m4[9;28H[?25h[?25l(B[m [74;126H(B[0;1;7m3[9;27H[?25h[?25l(B[m [74;126H(B[0;1;7m2[9;26H[?25h[?25l(B[m9[74;126H(B[0;1;7m3[9;27H[?25h[?25l(B[m0[74;126H(B[0;1;7m4[9;28H[?25h[?25l(B[m [74;126H(B[0;1;7m3[9;27H[?25h[?25l(B[m [74;126H(B[0;1;7m2[9;26H[?25h[?25l(B[m([74;126H(B[0;1;7m3[9;27H[?25h[?25l(B[m)[46m()[74;126H(B[0;1;7m4[9;28H[?25h[?25l(B[m;()[74;126H(B[0;1;7m5[9;29H[?25h[?25l(B[m[66B[12X]112[2 q[9;29H[?25h[?25l[74;126H(B[0;1;7m4[9;28H[?25h[?25l[75;130H(B[mZ[9;28H[?25h[?25l[75;131HZ[9;28H[?25h[?25l[66B"main.js"[120C  [122D[?25h[?25l[C14L, 381C written[75;1H[?25h[?25l]112[2 q(B[m[?25h[?1l>[?1049l[23;0;0t[23;0t[?2004l[?1004l[?25h[1m[7m%[27m[1m[0m                                                                                                                                            ]2;ubuntu@mqttbay:~/MQTTbay/main_app/scripts]1;..n_app/scripts[0m[27m[24m[J[01;32m➜  [36mscripts[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hvvi mqtt.js[1m [0m[0m [?1l>[?2004l
+]2;nvim mqtt.js]1;vi[?1049h[22;0;0t[22;0t[?1h=[H[2J]11;?[?2004h[?25h[?25l(B[m[H[2J]112[2 q]112[2 q[?25h[?25l[93m  1 (B[0;1m[96mfunction(B[m setupConnection() (B[0;1m[96m{(B[m[K
+[93m  2 (B[m[96m[48;5;242m+-- 26 lines: let clientId = uuidv4();··································································································
+(B[m[93m 28 (B[0;1m[96m}(B[m[K
+[94m~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+(B[0;1;7mmqtt.js                                                                                                                   1,1            All[1;5H[?25h[?25l[?1004h[?25h[?25l[75;130H(B[mf         [1;5H[?25h[?25l[75;131HC[1;5H[?25h[?25l[75;130H  [1;5H[?25h[?25l[74;126H(B[0;1;7m5[1;19H[?25h[?25l[75;130H(B[mi[1;19H[?25h[?25l[75;130H ]112[6 q[1;19H[?25h[?25l[74B(B[0;1m-- INSERT --(B[m[K[?25h[?25l[1;19H[?25h[?25lMConnection() (B[0;1m[96m{[74;9H(B[0;1;7m[+][114C6[1;20H[?25h[?25l(B[mQConnection() (B[0;1m[96m{[74;126H(B[0;1;7m7[1;21H[?25h[?25l(B[mConnection() (B[0;1m[96m{(B[m [74;126H(B[0;1;7m6[1;20H[?25h[?25l(B[mqConnection() (B[0;1m[96m{[74;126H(B[0;1;7m7[1;21H[?25h[?25l(B[mtConnection() (B[0;1m[96m{[74;126H(B[0;1;7m8[1;22H[?25h[?25l(B[mtConnection() (B[0;1m[96m{[74;126H(B[0;1;7m9[1;23H[?25h[?25l(B[m[74B[12X]112[2 q[1;23H[?25h[?25l[74;126H(B[0;1;7m8[1;22H[?25h[?25l[75;130H(B[mZ[1;22H[?25h[?25l[75;131HZ[1;22H[?25h[?25l[74B"mqtt.js"[120C  [122D[?25h[?25l[C28L, 899C written[75;1H[?25h[?25l]112[2 q(B[m[?25h[?1l>[?1049l[23;0;0t[23;0t[?2004l[?1004l[?25h[1m[7m%[27m[1m[0m                                                                                                                                            ]2;ubuntu@mqttbay:~/MQTTbay/main_app/scripts]1;..n_app/scripts[0m[27m[24m[J[01;32m➜  [36mscripts[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hvvi main.js[1m [0m[0m [?1l>[?2004l
+]2;nvim main.js]1;vi[?1049h[22;0;0t[22;0t[?1h=[H[2J]11;?[?2004h[?25h[?25l(B[m[H[2J]112[2 q]112[2 q[?25h[?25l[93m  1 window(B[m.onload = [93masync(B[m (B[0;1m[96mfunction(B[m() (B[0;1m[96m{(B[m[K
+[93m  2 (B[m[K
+[93m  3 (B[m[96m[48;5;242m+-- 11 lines: if(checkAccessToken()) {··································································································
+(B[m[93m 14 (B[0;1m[96m}(B[m;[K
+[94m~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+(B[0;1;7mmain.js                                                                                                                   1,1            All[1;5H[?25h[?25l[?1004h[?25h[?25l[75;130H(B[mZ         [1;5H[?25h[?25l[75;131HS[1;5H[?25h[?25l[75;130H  [1;5H[?25h[?25l[75;130HZ[1;5H[?25h[?25l[75;131HZ[1;5H[?25h[?25l[74B[?25h[?25l]112[2 q(B[m[?25h[?1l>[?1049l[23;0;0t[23;0t[?2004l[?1004l[?25h[1m[7m%[27m[1m[0m                                                                                                                                            ]2;ubuntu@mqttbay:~/MQTTbay/main_app/scripts]1;..n_app/scripts[0m[27m[24m[J[01;32m➜  [36mscripts[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hvvi mqtt.js[1m [0m[0m [?1l>[?2004l
+]2;nvim mqtt.js]1;vi[?1049h[22;0;0t[22;0t[?1h=[H[2J]11;?[?2004h[?25h[?25l(B[m[H[2J]112[2 q]112[2 q[?25h[?25l[93m  1 (B[0;1m[96mfunction(B[m setupMqttConnection() (B[0;1m[96m{(B[m[K
+[93m  2 (B[m[96m[48;5;242m+-- 26 lines: let clientId = uuidv4();··································································································
+(B[m[93m 28 (B[0;1m[96m}(B[m[K
+[94m~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+(B[0;1;7mmqtt.js                                                                                                                   1,1            All[1;5H[?25h[?25l[?1004h[?25h[?25l[75;130H(B[mf         [1;5H[?25h[?25l[75;131Hq[1;5H[?25h[?25l[75;130H  [1;5H[?25h[?25l[74;126H(B[0;1;7m6[1;20H[?25h[?25l[75;130H(B[mv[1;20H[?25h[?25l]112[2 q[?25h[?25l[75;130H1[1;20H[?25h[?25l[74B(B[0;1m-- VISUAL --(B[m[K[?25h[?25l[117C1[1;20H[?25h[?25l[75;130Hl[1;20H[?25h[?25l[75;130H2[1;20H[?25h[?25l[48;5;242mq[74;126H(B[0;1;7m7[1;21H[?25h[?25l[75;130H(B[ml[1;21H[?25h[?25l[75;130H3[1;21H[?25h[?25l[48;5;242mt[74;126H(B[0;1;7m8[1;22H[?25h[?25l[75;130H(B[mv[1;22H[?25h[?25l[75;130H ]112[2 q[1;22H[?25h[?25lqt[74B[12X[1;22H[?25h[?25l[75;130HU[1;22H[?25h[?25l[75;130H [1;22H[?25h[?25l[75;130Hv[1;22H[?25h[?25l]112[2 q[?25h[?25l[75;130H1[1;22H[?25h[?25l[74B(B[0;1m-- VISUAL --(B[m[117C [118D[?25h[?25l[117C1[1;22H[?25h[?25l[75;130Hh[1;22H[?25h[?25l[75;130H2[1;22H[?25h[?25l[48;5;242mt[74;126H(B[0;1;7m7[1;21H[?25h[?25l[75;130H(B[mh[1;21H[?25h[?25l[75;130H3[1;21H[?25h[?25l[48;5;242mt[74;126H(B[0;1;7m6[1;20H[?25h[?25l[75;130H(B[mU[1;20H[?25h[?25l[75;130H ]112[2 q[1;20H[?25h[?25lQTT[74;9H(B[0;1;7m[+](B[m
+[12X[1;20H[?25h[?25l[75;130HZ[1;20H[?25h[?25l[75;131HZ[1;20H[?25h[?25l[74B"mqtt.js"[120C  [122D[?25h[?25l[C28L, 899C written[75;1H[?25h[?25l]112[2 q(B[m[?25h[?1l>[?1049l[23;0;0t[23;0t[?2004l[?1004l[?25h[1m[7m%[27m[1m[0m                                                                                                                                            ]2;ubuntu@mqttbay:~/MQTTbay/main_app/scripts]1;..n_app/scripts[0m[27m[24m[J[01;32m➜  [36mscripts[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hvvi main.js[1m [0m[0m [?1l>[?2004l
+]2;nvim main.js]1;vi[?1049h[22;0;0t[22;0t[?1h=[H[2J]11;?[?2004h[?25h[?25l(B[m[H[2J]112[2 q]112[2 q[?25h[?25l[93m  1 window(B[m.onload = [93masync(B[m (B[0;1m[96mfunction(B[m() (B[0;1m[96m{(B[m[K
+[93m  2 (B[m[K
+[93m  3 (B[m[96m[48;5;242m+-- 11 lines: if(checkAccessToken()) {··································································································
+(B[m[93m 14 (B[0;1m[96m}(B[m;[K
+[94m~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+(B[0;1;7mmain.js                                                                                                                   1,1            All[1;5H[?25h[?25l[?1004h[?25h[?25l[75;130H(B[mz         [1;5H[?25h[?25l[75;131HR[1;5H[?25h[?25l[75;130H  [1;5H[?25h[?25l
+
+    [93mif(B[m(checkAccessToken()) (B[0;1m[96m{(B[m[K[4;2H[93m 4 (B[m        buttonAddArticle = [93mdocument(B[m.getElementById([95m'buttonAddArticle'(B[m);
+[93m  5 (B[m        buttonAddArticle.addEventListener([95m'click'(B[m, () => (B[0;1m[96m{(B[m[K
+[93m  6 (B[m            [93mdocument(B[m.[93mlocation(B[m.href = origin + [95m"/addArticle"(B[m;[K
+[93m  7 (B[m        (B[0;1m[96m}(B[m);        [K
+[93m  8 (B[m[K
+[93m  9 (B[m      setupConnection();[K
+[93m 10 (B[m    (B[0;1m[96m}(B[m[K
+[93m 11 (B[m    [93melse(B[m (B[0;1m[96m{(B[m[K
+[93m 12 (B[m        [93mdocument(B[m.[93mlocation(B[m.href = origin + [95m"/login"(B[m;[K
+[93m 13 (B[m    (B[0;1m[96m}(B[m[K
+[93m 14 (B[0;1m[96m}(B[m;[K[1;5H[?25h[?25l[75;130H/[1;5H[?25h[?25l[74B[J/]112[2 q[?25h[?25ls[?25h[?25l[1;22H(B[0;7m[93ms[3;21H(B[m[30m[103mss[5;40Hs[9;11Hs[11;11Hs[74;126H(B[0;1;7m8[75;3H[?25h[?25l(B[me[?25h[?25l[1;22H[93ms[3;21H(B[mss[5;40Hs[9;11H(B[0;7mse[11;12H(B[m[30m[103me[74;123H(B[0;1;7m9,7 [75;4H[?25h[?25l(B[mt[?25h[?25l[9;13H(B[0;7mt[11;11H(B[m[93mse[75;5H[?25h[?25l(B[mu[?25h[?25l[9;14H(B[0;7mu[75;6H[?25h[?25l(B[mp[?25h[?25l[9;15H(B[0;7mp[75;7H[?25h[?25l[75;1H[?25h[?25l]112[2 q[?25h[?25l[122C(B[m[1/1][?25h[?25l[9;11H[30m[103msetup[5D[?25h[?25l[75;130H(B[mf[9;11H[?25h[?25l[75;131Hp[9;11H[?25h[?25l[75;130H  [9;11H[?25h[?25l[74;125H(B[0;1;7m11[9;15H[?25h[?25l[75;130H(B[ma[9;15H[?25h[?25l[75;130H ]112[6 q[9;15H[?25h[?25l[66B(B[0;1m-- INSERT --(B[m[110C[5X[110D[?25h[?25l[74;126H(B[0;1;7m2[9;16H[?25h[?25l(B[mMConnection();[74;9H(B[0;1;7m[+][114C3[9;17H[?25h[?25l(B[mQConnection();[74;126H(B[0;1;7m4[9;18H[?25h[?25l(B[mTConnection();[74;126H(B[0;1;7m5[9;19H[?25h[?25l(B[mTConnection();[74;126H(B[0;1;7m6[9;20H[?25h[?25l(B[m[66B[12X]112[2 q[9;20H[?25h[?25l[74;126H(B[0;1;7m5[9;19H[?25h[?25l[75;130H(B[mZ[9;19H[?25h[?25l[75;131HZ[9;19H[?25h[?25l[66B"main.js"[120C  [122D[?25h[?25l[C14L, 385C written[75;1H[?25h[?25l]112[2 q(B[m[?25h[?1l>[?1049l[23;0;0t[23;0t[?2004l[?1004l[?25h[1m[7m%[27m[1m[0m                                                                                                                                            ]2;ubuntu@mqttbay:~/MQTTbay/main_app/scripts]1;..n_app/scripts[0m[27m[24m[J[01;32m➜  [36mscripts[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004h...[?1l>[?2004l
+]2;..]1;..[1m[7m%[27m[1m[0m                                                                                                                                            ]2;ubuntu@mqttbay:~/MQTTbay/main_app]1;..Tbay/main_app[0m[27m[24m[J[01;32m➜  [36mmain_app[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hvview
+[J[0mview    [J[01;34mviews[0m/[J[A[0m[27m[24m[25Cview[K[?1l>[?2004l
+[J]2;view]1;view[?1049h[22;0;0t[>4;2m[?1h=[?2004h[1;75r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[?25l[2;1H[94m~                                                                                                                                           [3;1H~                                                                                                                                           [4;1H~                                                                                                                                           [5;1H~                                                                                                                                           [6;1H~                                                                                                                                           [7;1H~                                                                                                                                           [8;1H~                                                                                                                                           [9;1H~                                                                                                                                           [10;1H~                                                                                                                                           [11;1H~                                                                                                                                           [12;1H~                                                                                                                                           [13;1H~                                                                                                                                           [14;1H~                                                                                                                                           [15;1H~                                                                                                                                           [16;1H~                                                                                                                                           [17;1H~                                                                                                                                           [18;1H~                                                                                                                                           [19;1H~                                                                                                                                           [20;1H~                                                                                                                                           [21;1H~                                                                                                                                           [22;1H~                                                                                                                                           [23;1H~                                                                                                                                           [24;1H~                                                                                                                                           [25;1H~                                                                                                                                           [26;1H~                                                                                                                                           [27;1H~                                                                                                                                           [28;1H~                                                                                                                                           [29;1H~                                                                                                                                           [30;1H~                                                                                                                                           [31;1H~                                                                                                                                           [32;1H~                                                                                                                                           [33;1H~                                                                                                                                           [34;1H~                                                                                                                                           [35;1H~                                                                                                                                           [36;1H~                                                                                                                                           [37;1H~                                                                                                                                           [38;1H~                                                                                                                                           [39;1H~                                                                                                                                           [40;1H~                                                                                                                                           [41;1H~                                                                                                                                           [42;1H~                                                                                                                                           [43;1H~                                                                                                                                           [44;1H~                                                                                                                                           [45;1H~                                                                                                                                           [46;1H~                                                                                                                                           [47;1H~                                                                                                                                           [48;1H~                                                                                                                                           [49;1H~                                                                                                                                           [50;1H~                                                                                                                                           [51;1H~                                                                                                                                           [52;1H~                                                                                                                                           [53;1H~                                                                                                                                           [54;1H~                                                                                                                                           [55;1H~                                                                                                                                           [56;1H~                                                                                                                                           [57;1H~                                                                                                                                           [58;1H~                                                                                                                                           [59;1H~                                                                                                                                           [60;1H~                                                                                                                                           [61;1H~                                                                                                                                           [62;1H~                                                                                                                                           [63;1H~                                                                                                                                           [64;1H~                                                                                                                                           [65;1H~                                                                                                                                           [66;1H~                                                                                                                                           [67;1H~                                                                                                                                           [68;1H~                                                                                                                                           [69;1H~                                                                                                                                           [70;1H~                                                                                                                                           [71;1H~                                                                                                                                           [72;1H~                                                                                                                                           [73;1H~                                                                                                                                           [74;1H~                                                                                                                                           [m[75;123H0,0-1[9CAll[32;62HVIM - Vi IMproved[34;63Hversion 8.1.3741[35;59Hby Bram Moolenaar et al.[36;51HModified by team+vim@tracker.debian.org[37;49HVim is open source and freely distributable[39;56HHelp poor children in Uganda![40;48Htype  :help iccf[34m<Enter>[m       for information [42;48Htype  :q[34m<Enter>[m               to exit         [43;48Htype  :help[34m<Enter>[m  or  [34m<F1>[m  for on-line help[44;48Htype  :help version8[34m<Enter>[m   for version info[1;1H[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[27m[23m[29m[m[H[2J[?25l[2;1H[94m~                                                                                                                                           [3;1H~                                                                                                                                           [4;1H~                                                                                                                                           [5;1H~                                                                                                                                           [6;1H~                                                                                                                                           [7;1H~                                                                                                                                           [8;1H~                                                                                                                                           [9;1H~                                                                                                                                           [10;1H~                                                                                                                                           [11;1H~                                                                                                                                           [12;1H~                                                                                                                                           [13;1H~                                                                                                                                           [14;1H~                                                                                                                                           [15;1H~                                                                                                                                           [16;1H~                                                                                                                                           [17;1H~                                                                                                                                           [18;1H~                                                                                                                                           [19;1H~                                                                                                                                           [20;1H~                                                                                                                                           [21;1H~                                                                                                                                           [22;1H~                                                                                                                                           [23;1H~                                                                                                                                           [24;1H~                                                                                                                                           [25;1H~                                                                                                                                           [26;1H~                                                                                                                                           [27;1H~                                                                                                                                           [28;1H~                                                                                                                                           [29;1H~                                                                                                                                           [30;1H~                                                                                                                                           [31;1H~                                                                                                                                           [32;1H~                                                                                                                                           [33;1H~                                                                                                                                           [34;1H~                                                                                                                                           [35;1H~                                                                                                                                           [36;1H~                                                                                                                                           [37;1H~                                                                                                                                           [38;1H~                                                                                                                                           [39;1H~                                                                                                                                           [40;1H~                                                                                                                                           [41;1H~                                                                                                                                           [42;1H~                                                                                                                                           [43;1H~                                                                                                                                           [44;1H~                                                                                                                                           [45;1H~                                                                                                                                           [46;1H~                                                                                                                                           [47;1H~                                                                                                                                           [48;1H~                                                                                                                                           [49;1H~                                                                                                                                           [50;1H~                                                                                                                                           [51;1H~                                                                                                                                           [52;1H~                                                                                                                                           [53;1H~                                                                                                                                           [54;1H~                                                                                                                                           [55;1H~                                                                                                                                           [56;1H~                                                                                                                                           [57;1H~                                                                                                                                           [58;1H~                                                                                                                                           [59;1H~                                                                                                                                           [60;1H~                                                                                                                                           [61;1H~                                                                                                                                           [62;1H~                                                                                                                                           [63;1H~                                                                                                                                           [64;1H~                                                                                                                                           [65;1H~                                                                                                                                           [66;1H~                                                                                                                                           [67;1H~                                                                                                                                           [68;1H~                                                                                                                                           [69;1H~                                                                                                                                           [70;1H~                                                                                                                                           [71;1H~                                                                                                                                           [72;1H~                                                                                                                                           [73;1H~                                                                                                                                           [74;1H~                                                                                                                                           [m[75;123H0,0-1[9CAll[32;62HVIM - Vi IMproved[34;63Hversion 8.1.3741[35;59Hby Bram Moolenaar et al.[36;51HModified by team+vim@tracker.debian.org[37;49HVim is open source and freely distributable[39;56HHelp poor children in Uganda![40;48Htype  :help iccf[38;5;81m<Enter>[m       for information [42;48Htype  :q[38;5;81m<Enter>[m               to exit         [43;48Htype  :help[38;5;81m<Enter>[m  or  [38;5;81m<F1>[m  for on-line help[44;48Htype  :help version8[38;5;81m<Enter>[m   for version info[1;1H[?25hP+q6b32\P+q6b33\P+q6b34\[?25l[75;113H7[1;1H[75;114H2[1;1H[75;115H=[1;1H[75;116H1[1;1H[75;117Hb[1;1H[75;118H4[1;1H[75;119Hf[1;1H[75;120H4[1;1H[75;121H3[1;1H[75;113H2=1b4f43^[[1;1H[75;113H          [1;1HP+q6b35\P+q6b36\P+q6b37\[75;113H^[[1;1H[75;115HP[1;1H[75;116H1[1;1H[75;117H+[1;1H[75;113H     [1;1HP+q6b38\P+q6b39\[75;113H1[1;1H[75;114H+[1;1H[75;115Hr[1;1H[75;116H2[1;1H[75;117Ha[1;1H[75;118H3[1;1H[75;119H7[1;1H[75;120H=[1;1H[75;121H1[1;1H[75;122Hb[1;1H[75;113H          [1;1HP+q6b3b\P+q4631\[?25hP+q4632\P+q2531\P+q2638\[?25l[75;113H3[1;1H[75;114H5[1;1H[75;115H=[1;1H[75;116H1[1;1H[75;117Hb[1;1H[75;118H5[1;1H[75;119Hb[1;1H[75;120H3[1;1H[75;121H1[1;1H[75;122H3[1;1H[75;113H          [1;1HP+q6b62\P+q6b49\[75;113H1[1;1H[75;114Hb[1;1H[75;115H5[1;1H[75;116Hb[1;1H[75;117H3[1;1H[75;118H1[1;1H[75;119H3[1;1H[75;120H8[1;1H[75;121H7[1;1H[75;122He[1;1H[75;113H          [1;1HP+q6b44\P+q6b68\P+q4037\[75;113HP[1;1H[75;114H1[1;1H[75;115H+[1;1H[75;116Hr[1;1H[75;117H6[1;1H[75;118Hb[1;1H[75;119H3[1;1H[75;120Hb[1;1H[75;121H=[1;1H[75;122H1[1;1H[75;113H          [1;1HP+q6b50\P+q6b4e\[?25hP+q4b31\P+q4b33\P+q4b34\P+q4b35\[?25l[75;113HP[1;1H[75;114H1[1;1H[75;115H+[1;1H[75;116Hr[1;1H[75;117H6[1;1H[75;118Hb[1;1H[75;119H4[1;1H[75;120H9[1;1H[75;121H=[1;1H[75;122H1[1;1H[75;113H          [1;1HP+q6b42\[?25h[?25l[75;113Hb[1;1H[75;114H4[1;1H[75;115H2[1;1H[75;116H=[1;1H[75;117H1[1;1H[75;118Hb[1;1H[75;119H5[1;1H[75;120Hb[1;1H[75;121H5[1;1H[75;122Ha[1;1H[75;113H          [1;1H[?25h[?25l[75;113HZ[1;1H[?25h[?25l[75;114HQ[1;1H[75;1H[?2004l[23;2t[23;1t[75;113H[K[75;1H[?2004l[?1l>[?25h[>4;m[?1049l[23;0;0t[1m[7m%[27m[1m[0m                                                                                                                                            ]2;ubuntu@mqttbay:~/MQTTbay/main_app]1;..Tbay/main_app[0m[27m[24m[J[01;32m➜  [36mmain_app[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hvvi views[1m/[0m[0m [?1l>[?2004l
+]2;nvim views]1;vi[?1049h[22;0;0t[22;0t[?1h=[H[2J]11;?[?2004h[?25h[?25l(B[m[H[2J]112[2 q]112[2 q[?25h[?25l[96m" ============================================================================(B[m[K
+[96m" Netrw Directory Listing                                        (B[0;1m[96m(netrw v171)(B[m[K
+[96m"   /home/ubuntu/MQTTbay/main_app/views(B[m[K
+[96m"   Sorted by(B[m[93m      name(B[m[K
+[96m"   Sort sequence:(B[m[93m [\/]$(B[m[96m,(B[m[93m\<core\%(\.\d\+\)\=\>(B[m[96m,(B[m[93m\.h$(B[m[96m,(B[m[93m\.c$(B[m[96m,(B[m[93m\.cpp$(B[m[96m,(B[m[93m\~\=\*$(B[m[96m,(B[m[93m*(B[m[96m,(B[m[93m\.o$(B[m[96m,(B[m[93m\.obj$(B[m[96m,(B[m[93m\.info$(B[m[96m,(B[m[93m\.swp$(B[m[96m,(B[m[93m\.bak$(B[m[96m,(B[m[93m\~$(B[m[K
+[96m"   Quick Help: (B[0;1m[96m<F1>(B[m[38;5;224m:(B[mhelp  (B[0;1m[96m-(B[m[38;5;224m:(B[mgo up dir  (B[0;1m[96mD(B[m[38;5;224m:(B[mdelete  (B[0;1m[96mR(B[m[38;5;224m:(B[mrename  (B[0;1m[96ms(B[m[38;5;224m:(B[msort-by  (B[0;1m[96mx(B[m[38;5;224m:(B[mspecial[K
+[96m" ==============================================================================(B[m[K
+(B[0;4m[38;5;159m..(B[0;1;4m[96m/(B[0;4m                                                                                                                                         
+(B[m[38;5;159m.(B[0;1m[96m/(B[m[K
+addArticle.pug[K
+login.pug[K
+main.pug[K
+[94m~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+(B[0;1;7m[No Name] [RO]                                                                                                            8,1            All[66A[?25h[?25l[?1004h[?25h[?25l[75;130H(B[mj         [67A[?25h[?25l[75;130H [67A[?25h[?25l[38;5;159m..(B[0;1m[96m/(B[m[K
+(B[0;4m[38;5;159m.(B[0;1;4m[96m/(B[0;4m                                                                                                                                          [74;123H(B[0;1;7m9[65A[?25h[?25l[75;130H(B[mj[66A[?25h[?25l[75;130H [66A[?25h[?25l[38;5;159m.(B[0;1m[96m/(B[m[K
+(B[0;4maddArticle.pug                                                                                                                              [74;123H(B[0;1;7m10,1[64A[?25h[?25l[75;130H(B[mj[65A[?25h[?25l[75;130H [65A[?25h[?25laddArticle.pug[K
+(B[0;4mlogin.pug                                                                                                                                   [74;124H(B[0;1;7m1[63A[?25h[?25l[75;130H(B[mj[64A[?25h[?25l[75;130H [64A[?25h[?25llogin.pug[K
+(B[0;4mmain.pug                                                                                                                                    [74;124H(B[0;1;7m2[62A[?25h[?25l]112[2 q[?25h[?25l[H(B[m[93m  1 (B[mhtml[70X
+[93m  2 (B[m[96m[48;5;242m+-- 11 lines: head······················································································································
+(B[m[94m~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K[62B(B[0;1;7m~/MQTTbay/main_app/views/main.pug[90C,1 [1;5H[?25h[?25l[75;130H(B[mz[1;5H[?25h[?25l[75;131HR[1;5H[?25h[?25l[75;130H  [1;5H[?25h[?25l
+  head[K
+[93m  3 (B[m    title="MQTTbay"[K
+[93m  4 (B[m    script(defer="true", src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.js" type="text/javascript")[K
+[93m  5 (B[m    script(defer="true", src="https://unpkg.com/uuid@latest/dist/umd/uuidv4.min.js")[K
+[93m  6 (B[m    script(defer="true")[K
+[93m  7 (B[m      include ../scripts/authorizeUser.js[K
+[93m  8 (B[m      include ../scripts/main.js[K
+[93m  9 (B[m[K
+[93m 10 (B[m  body[K
+[93m 11 (B[m    h1="MQTTbay"[K
+[93m 12 (B[m    button#buttonAddArticle Add Article[K[1;5H[?25h[?25l[75;130Hj[1;5H[?25h[?25l[75;130H [1;5H[?25h[?25l[74;123H(B[0;1;7m2[2;5H[?25h[?25l[75;130H(B[mj[2;5H[?25h[?25l[75;130H [2;5H[?25h[?25l[74;123H(B[0;1;7m3[3;5H[?25h[?25l[75;130H(B[mj[3;5H[?25h[?25l[75;130H [3;5H[?25h[?25l[74;123H(B[0;1;7m4[4;5H[?25h[?25l[75;130H(B[mj[4;5H[?25h[?25l[75;130H [4;5H[?25h[?25l[74;123H(B[0;1;7m5[5;5H[?25h[?25l[75;130H(B[mj[5;5H[?25h[?25l[75;130H [5;5H[?25h[?25l[74;123H(B[0;1;7m6[6;5H[?25h[?25l[75;130H(B[mj[6;5H[?25h[?25l[75;130H [6;5H[?25h[?25l[74;123H(B[0;1;7m7[7;5H[?25h[?25l[75;130H(B[ml[7;5H[?25h[?25l[75;130H [7;5H[?25h[?25l[74;125H(B[0;1;7m2[7;6H[?25h[?25l[75;130H(B[ml[7;6H[?25h[?25l[75;130H [7;6H[?25h[?25l[74;125H(B[0;1;7m3[7;7H[?25h[?25l[75;130H(B[ml[7;7H[?25h[?25l[75;130H [7;7H[?25h[?25l[74;125H(B[0;1;7m4[7;8H[?25h[?25l[75;130H(B[ml[7;8H[?25h[?25l[75;130H [7;8H[?25h[?25l[74;125H(B[0;1;7m5[7;9H[?25h[?25l[75;130H(B[ml[7;9H[?25h[?25l[75;130H [7;9H[?25h[?25l[74;125H(B[0;1;7m6[7;10H[?25h[?25l[75;130H(B[ml[7;10H[?25h[?25l[75;130H [7;10H[?25h[?25l[74;125H(B[0;1;7m7[7;11H[?25h[?25l[75;130H(B[mj[7;11H[?25h[?25l[75;130H [7;11H[?25h[?25l[74;123H(B[0;1;7m8[8;11H[?25h[?25l[75;130H(B[mk[8;11H[?25h[?25l[75;130H [8;11H[?25h[?25l[74;123H(B[0;1;7m7[7;11H[?25h[?25l[75;130H(B[mk[7;11H[?25h[?25l[75;130H [7;11H[?25h[?25l[74;123H(B[0;1;7m6[6;11H[?25h[?25l[75;130H(B[mj[6;11H[?25h[?25l[75;130H [6;11H[?25h[?25l[74;123H(B[0;1;7m7[7;11H[?25h[?25l[75;130H(B[mj[7;11H[?25h[?25l[75;130H [7;11H[?25h[?25l[74;123H(B[0;1;7m8[8;11H[?25h[?25l[75;130H(B[mk[8;11H[?25h[?25l[75;130H [8;11H[?25h[?25l[74;123H(B[0;1;7m7[7;11H[?25h[?25l[75;130H(B[mj[7;11H[?25h[?25l[75;130H [7;11H[?25h[?25l[74;123H(B[0;1;7m8[8;11H[?25h[?25l[75;130H(B[mk[8;11H[?25h[?25l[75;130H [8;11H[?25h[?25l[74;123H(B[0;1;7m7[7;11H[?25h[?25l[75;130H(B[my[7;11H[?25h[?25l[75;130H ]112[4 q[7;11H[?25h[?25l[75;130Hyy[7;11H[?25h[?25l[75;130H  ]112[2 q[7;11H[?25h[?25l[75;130HP[7;11H[?25h[?25l[75;130H [7;11H[?25h[?25l[8;30HauthorizeUser.js[9;11Hinclude ../scripts/main.js[10;7H    [11;7Hbody[10X[12;9Hh1="MQTTbay"[23X
+[93m 13 (B[m    button#buttonAddArticle Add Article[K[74;35H(B[0;1;7m[+][7;11H[?25h[?25l[75;130H(B[mf[7;11H[?25h[?25l[75;131Ha[7;11H[?25h[?25l[75;130H  [7;11H[?25h[?25l[74;125H(B[0;1;7m26[7;30H[?25h[?25l[75;130H(B[mc[7;30H[?25h[?25l]112[4 q[?25h[?25l[75;131Hw[7;30H[?25h[?25l[75;130H  ]112[6 q[7;30H[?25h[?25l[68B(B[0;1m-- INSERT --(B[m[K[?25h[?25l[7;30H.js[13X[?25h[?25lm.js[74;126H(B[0;1;7m7[7;31H[?25h[?25l(B[mq.js[74;126H(B[0;1;7m8[7;32H[?25h[?25l(B[mt.js[74;126H(B[0;1;7m9[7;33H[?25h[?25l(B[mt.js[74;125H(B[0;1;7m30[7;34H[?25h[?25l(B[m[68B[12X]112[2 q[7;34H[?25h[?25l[74;125H(B[0;1;7m29[7;33H[?25h[?25l[75;130H(B[mZ[7;33H[?25h[?25l[75;131HZ[7;33H[?25h[?25l[68B"~/MQTTbay/main_app/views/main.pug"[94C  [96D[?25h[?25l[C13L, 437C written[75;1H[?25h[?25l]112[2 q(B[m[?25h[?1l>[?1049l[23;0;0t[23;0t[?2004l[?1004l[?25h[1m[7m%[27m[1m[0m                                                                                                                                            ]2;ubuntu@mqttbay:~/MQTTbay/main_app]1;..Tbay/main_app[0m[27m[24m[J[01;32m➜  [36mmain_app[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hvvi 
+[J[0mindex.js           [J[01;34mnode_modules[0m/      [Jpackage-lock.json  [Jpackage.json       [J[01;34mscripts[0m/           [Jtypescript         [J[01;34mviews[0m/           [J[A[0m[27m[24m[25Cvi[K[1Cviews[1m/[0m[0m/
+[J[J[0maddArticle.pug  [Jlogin.pug       [Jmain.pug      [J[A[0m[27m[24m[25Cvi views/[KaddArticle.pug
+[J[7maddArticle.pug[0m  [Jlogin.pug       [Jmain.pug      [J[A[0m[27m[24m[25Cvi views/addArticle.pug[K
+[7maddArticle.pug[0m  [7maddArticle.pug[0m  [A[0m[27m[24m[25Cvi views/addArticle.pug[K[14Dlogin.pug     
+[16C[7mlogin.pug     [0m  addArticle.pug  [A[0m[27m[24m[25Cvi views/login.pug[K[9Dmain.pug 
+[32C[7mmain.pug      [0m[16Clogin.pug       [A[0m[27m[24m[25Cvi views/main.pug[K[8DaddArticle.pug
+[7maddArticle.pug[0m  [32Cmain.pug      [A[0m[27m[24m[25Cvi views/addArticle.pug[K
+[J[A[48C[1m [0m[0m [?1l>[?2004l
+[J]2;nvim views/addArticle.pug]1;vi[?1049h[22;0;0t[22;0t[?1h=[H[2J]11;?[?2004h[?25h[?25l(B[m[H[2J]112[2 q]112[2 q[?25h[?25l[93m  1 (B[mhtml[K
+[93m  2 (B[m[96m[48;5;242m+-- 20 lines: head······················································································································
+(B[m[94m~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+(B[0;1;7mviews/addArticle.pug                                                                                                      1,1            All[1;5H[?25h[?25l[?1004h[?25h[?25l[75;130H(B[mz         [1;5H[?25h[?25l[75;131HR[1;5H[?25h[?25l[75;130H  [1;5H[?25h[?25l
+  head[K
+[93m  3 (B[m    title="AddArticle"[K
+[93m  4 (B[m    script(defer="true")[K
+[93m  5 (B[m      include ../scripts/authorizeUser.js[K
+[93m  6 (B[m      include ../scripts/addArticle.js[K
+[93m  7 (B[m[K
+[93m  8 (B[m  body[K
+[93m  9 (B[m    h1="AddArticle"[K
+[93m 10 (B[m    button#buttonBack Back[K
+[93m 11 (B[m[K
+[93m 12 (B[m    p   [K
+[93m 13 (B[m      label(for="inputUsername")#labelArticleName Article name [K
+[93m 14 (B[m      br[K
+[93m 15 (B[m      input(type="text")#inputArticleName[K
+[93m 16 (B[m    p   [K
+[93m 17 (B[m      label(for="inputPassword")#labelBasePrice Base price [K
+[93m 18 (B[m      br[K
+[93m 19 (B[m      input(type="text")#inputBasePrice[K
+[93m 20 (B[m    p [K
+[93m 21 (B[m      button#buttonAdd Add [K[1;5H[?25h[?25l[75;130H5[1;5H[?25h[?25l[75;131HG[1;5H[?25h[?25l[75;130H  [1;5H[?25h[?25l[74;123H(B[0;1;7m5[5;5H[?25h[?25l[75;130H(B[mO[5;5H[?25h[?25l[75;130H ]112[6 q[5;5H[?25h[?25l[70B(B[0;1m-- INSERT --(B[m[K[?25h[?25l[5;11H[35X[6;31HuthorizeUser.js[7;11Hinclude ../scripts/addArticle.js[8;7H    [9;7Hbody[13X[10;9Hh1="AddArticle"[7X[11;9Hbutton#buttonBack Back[12;9H [13;9Hp   [54X[14;11Hlabel(for="inputUsername")#labelArticleName Article name[15;11Hbr[33X[16;9H  input(type="text")#inputArticleName[17;9Hp   [50X[18;11Hlabel(for="inputPassword")#labelBasePrice Base price[19;11Hbr[31X[20;9H  input(type="text")#inputBasePrice[21;9Hp [20X
+[93m 22 (B[m      button#buttonAdd Add [K[74;22H(B[0;1;7m[+][100C7[5;11H[?25h[?25l(B[m[70B[12X]112[2 q[5;11H[?25h[?25l[74;125H(B[0;1;7m0-1[5;5H[?25h[?25l[75;130H(B[mj[5;5H[?25h[?25l[75;130H [5;5H[?25h[?25l[74;123H(B[0;1;7m6,7  [6;11H[?25h[?25l[75;130H(B[my[6;11H[?25h[?25l[75;130H ]112[4 q[6;11H[?25h[?25l[75;130Hyy[6;11H[?25h[?25l[75;130H  ]112[2 q[6;11H[?25h[?25l[75;130Hj[6;11H[?25h[?25l[75;130H [6;11H[?25h[?25l[74;123H(B[0;1;7m7[7;11H[?25h[?25l[75;130H(B[mk[7;11H[?25h[?25l[75;130H [7;11H[?25h[?25l[74;123H(B[0;1;7m6[6;11H[?25h[?25l[75;130H(B[mk[6;11H[?25h[?25l[75;130H [6;11H[?25h[?25l[74;123H(B[0;1;7m5,0-1[5;5H[?25h[?25l[75;130H(B[mj[5;5H[?25h[?25l[75;130H [5;5H[?25h[?25l[74;123H(B[0;1;7m6,7  [6;11H[?25h[?25l[75;130H(B[mP[6;11H[?25h[?25l[75;130H [6;11H[?25h[?25l[7;31HuthorizeUser.js[8;11Hinclude ../scripts/addArticle.js[9;7H    [10;7Hbody[13X[11;9Hh1="AddArticle"[7X[12;9Hbutton#buttonBack Back[13;9H [14;9Hp   [54X[15;11Hlabel(for="inputUsername")#labelArticleName Article name[16;11Hbr[33X[17;9H  input(type="text")#inputArticleName[18;9Hp   [50X[19;11Hlabel(for="inputPassword")#labelBasePrice Base price[20;11Hbr[31X[21;9H  input(type="text")#inputBasePrice[22;9Hp [20X
+[93m 23 (B[m      button#buttonAdd Add [K[6;11H[?25h[?25l[75;130Hk[6;11H[?25h[?25l[75;130H [6;11H[?25h[?25l[74;123H(B[0;1;7m5,0-1[5;5H[?25h[?25l[75;130H(B[md[5;5H[?25h[?25l]112[4 q[?25h[?25l[75;131Hd[5;5H[?25h[?25l[75;130H  ]112[2 q[5;5H[?25h[?25l[6Cinclude ../scripts/authorizeUser.js[7;31HddArticle.js   [8;11H[32X[9;7Hbody[10;7H  h1="AddArticle"[11;9Hbutton#buttonBack Back[12;9H[22X
+p[14;9H  label(for="inputUsername")#labelArticleName Article name[15;11Hbr[54X[16;11Hinput(type="text")#inputArticleName[17;9Hp   [33X[18;9H  label(for="inputPassword")#labelBasePrice Base price[19;11Hbr[50X[20;11Hinput(type="text")#inputBasePrice[21;9Hp [33X[22;9H  button#buttonAdd Add
+[94m~[K[74;125H(B[0;1;7m7  [5;11H[?25h[?25l[75;130H(B[mj[5;11H[?25h[?25l[75;130H [5;11H[?25h[?25l[74;123H(B[0;1;7m6[6;11H[?25h[?25l[75;130H(B[mf[6;11H[?25h[?25l[75;131Hk[6;11H[?25h[?25l[75;130H  [6;11H[?25h[?25l[69BType  :qa!  and press <Enter> to abandon all changes and exit Nvim[?25h[?25l[6;11H[?25h[?25l[75;130Hk[6;11H[?25h[?25l[75;130H [6;11H[?25h[?25l[74;123H(B[0;1;7m5[5;11H[?25h[?25l[75;130H(B[mf[5;11H[?25h[?25l[75;131Ha[5;11H[?25h[?25l[75;130H  [5;11H[?25h[?25l[74;125H(B[0;1;7m26[5;30H[?25h[?25l[75;130H(B[mc[5;30H[?25h[?25l]112[4 q[?25h[?25l[75;131Hw[5;30H[?25h[?25l[75;130H  ]112[6 q[5;30H[?25h[?25l[70B(B[0;1m-- INSERT --(B[m[54X[?25h[?25l[5;30H.js[13X[?25h[?25lm.js[74;126H(B[0;1;7m7[5;31H[?25h[?25l(B[mq.js[74;126H(B[0;1;7m8[5;32H[?25h[?25l(B[mt.js[74;126H(B[0;1;7m9[5;33H[?25h[?25l(B[mt.js[74;125H(B[0;1;7m30[5;34H[?25h[?25l(B[m[70B[12X]112[2 q[5;34H[?25h[?25l[74;125H(B[0;1;7m29[5;33H[?25h[?25l[75;130H(B[mZ[5;33H[?25h[?25l[75;131HZ[5;33H[?25h[?25l[70B"views/addArticle.pug"[107C  [109D[?25h[?25l[C22L, 507C written[75;1H[?25h[?25l]112[2 q(B[m[?25h[?1l>[?1049l[23;0;0t[23;0t[?2004l[?1004l[?25h[1m[7m%[27m[1m[0m                                                                                                                                            ]2;ubuntu@mqttbay:~/MQTTbay/main_app]1;..Tbay/main_app[0m[27m[24m[J[01;32m➜  [36mmain_app[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004h[?2004l
+
+Script done on 2022-07-10 17:54:53+02:00 [COMMAND_EXIT_CODE="0"]

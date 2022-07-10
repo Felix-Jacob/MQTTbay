@@ -1,7 +1,10 @@
 html
   head
     title="MQTTbay"
+    script(defer="true", src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.js" type="text/javascript")
+    script(defer="true", src="https://unpkg.com/uuid@latest/dist/umd/uuidv4.min.js")
     script(defer="true")
+      include ../scripts/mqtt.js
       include ../scripts/authorizeUser.js
       include ../scripts/main.js
 

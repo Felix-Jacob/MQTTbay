@@ -1,6 +1,8 @@
 const express = require('express');
+
 const app = express();
 const port = 3000;
+
 
 // settings for pug
 app.set('views', './views');

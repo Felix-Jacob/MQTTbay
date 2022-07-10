@@ -6,3 +6,7 @@
     - display name and price
     - update list by mqtt
 - Add logout button
+- Seite erst nach mqtt verbindung benutzbar machen
+- onconnectionLost promgrammiern
+- user unregistern, falls senden der nachricht gescheitert sein sollte
+- websocket verbindung offen halten durch ajax oder shared webworker oder hidden frame
