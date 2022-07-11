@@ -108,6 +108,7 @@ app.post('/addArticle', cors(corsOptions), (req, res) => {
         if(err)
           return res.status(400).send('database error. couldnt save article');
         else {
+          console.log(ydb.get('^Articles'));
           return res.status(200).send('article successfully saved');
         }
       }); 
