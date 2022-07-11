@@ -98,4 +98,34 @@ app.post('/checkToken', cors(corsOptions), (req, res) => {
 		res.status(200).json({username: username});
     });
 });
+
+app.post('/addArticle', cors(corsOptions), (req, res) => {
+    if(req.body.articleName
+      && req.body.articlePrice
+      && req.body.articleId
+      && req.body.userName) {
+      ydb.set('^Articles', req.body.articleId, 'name', req.body.articleName,'price', req.body.articlePrice, 'userName', req.body.userName, (err, result) => {
+        if(err)
+          return res.status(400).send('database error. couldnt save article');
+        else {
+          return res.status(200).send('article successfully saved');
+        }
+      }); 
+    }
+    else {
+      return res.status(400).send('Missing Information\n'); 
+    }
+});
+
+app.post('/removeArticle', cors(corsOptions), (req, res) => {
+    if(req.body.articleName
+      && req.body.articlePrice
+      && req.body.articleId
+      && req.body.userName) {
+
+    }
+    else {
+      return res.status(400).send('Missing Information\n'); 
+    }
+});
 // ydb.set({global:'Users', subscripts: ["emilia", "password"], data: 1234});
