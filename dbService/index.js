@@ -18,6 +18,10 @@ const port = 4000;
 
 const ydb=require('nodem').Ydb();
 
+function printJson(JsonObject) {
+	console.log(JSON.stringify(JsonObject, null, 2));
+}
+
 ydbStatus = ydb.open(
 	{
 		routinesPath: '/root/MQTTbay/userService/node_modules/nodem/src',
@@ -104,14 +108,20 @@ app.post('/addArticle', cors(corsOptions), (req, res) => {
       && req.body.articlePrice
       && req.body.articleId
       && req.body.userName) {
-      ydb.set('^Articles', req.body.articleId, 'name', req.body.articleName,'price', req.body.articlePrice, 'userName', req.body.userName, (err, result) => {
-        if(err)
-          return res.status(400).send('database error. couldnt save article');
-        else {
-          console.log(ydb.get('^Articles'));
-          return res.status(200).send('article successfully saved');
-        }
-      }); 
+      if(ydb.data('^Articles')) {
+		let articles = JSON.parse(ydb.get('^Articles'));
+		articles.push(article);
+		ydb.set('^Articles', JSON.stringify(articles));
+	}
+	else {
+		let articles = [article];
+		ydb.set('^Articles', JSON.stringify(articles));
+	}
+
+	variableName ='^Article' + String(article.id);
+	ydb.set(variableName, 'name', article.name);
+	ydb.set(variableName, 'userName', article.userName);
+	printJson(ydb.get('^Articles'));
     }
     else {
       return res.status(400).send('Missing Information\n'); 
